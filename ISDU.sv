@@ -79,12 +79,12 @@ module ISDU ( 	input	Clk,
                 Next_state <= S_35;
             S_35 : 
                 Next_state <= PauseIR1;
-            PauseIR1 : 
+            PauseIR1 : // Pause to display IR on HEX (for week 1)
                 if (~ContinueIR) 
                     Next_state <= PauseIR1;
                 else 
                     Next_state <= PauseIR2;
-            PauseIR2 : 
+            PauseIR2 : // Wait for ContinueIR to be released (for week 1)
                 if (ContinueIR) 
                     Next_state <= PauseIR2;
                 else 
