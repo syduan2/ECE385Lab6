@@ -71,19 +71,21 @@ module ISDU ( 	input	Clk,
             Halted : 
 	            if (Run) 
 					Next_state <= S_18;					  
-            S_18 : 
-                Next_state <= S_33_1;
-            S_33_1 : 
-                Next_state <= S_33_2;
+            S_18 :									
+						Next_state <= S_33_1;
+            S_33_1 :
+						Next_state <= S_33_2;
+
             S_33_2 : 
-                Next_state <= S_35;
-            S_35 : 
+						Next_state <= S_35;
+            S_35 :
                 Next_state <= PauseIR1;
             PauseIR1 : // Pause to display IR on HEX (for week 1)
                 if (~ContinueIR) 
                     Next_state <= PauseIR1;
                 else 
                     Next_state <= PauseIR2;
+					
             PauseIR2 : // Wait for ContinueIR to be released (for week 1)
                 if (ContinueIR) 
                     Next_state <= PauseIR2;
@@ -130,7 +132,7 @@ module ISDU ( 	input	Clk,
 	    ADDR2MUX = 2'b00;
 	    MARMUX = 1'b0;
 		 
-	    Mem_OE = 1'b1;
+	    Mem_OE = 1'b1; 
 	    Mem_WE = 1'b1;
 		 
 	    case (State)
@@ -139,7 +141,7 @@ module ISDU ( 	input	Clk,
 				begin 
 					GatePC = 1'b1;
 					LD_MAR = 1'b1;
-					PCMUX = 2'b00;
+					PCMUX = 2'b00; //00 is +1
 					LD_PC = 1'b1;
 				end
 			S_33_1 : 

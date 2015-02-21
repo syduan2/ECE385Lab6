@@ -1,0 +1,10 @@
+module tri_buffer_16 (input Enable, input[15:0] In, input[15:0] Out);
+	always_comb
+	begin
+		if(Enable)
+			Out=In;
+		Else
+			Out=16'hZ
+	end
+
+endmodule
