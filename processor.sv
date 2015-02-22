@@ -5,12 +5,12 @@ module processor (input Clk, Reset, Run, Continue,
 				  					 HEX2,
 				  					 HEX3,
 				  output logic [15:0] ADDR,
-				  inout logic [15:0] Data,
-				  output logic Mem_CE_out,
-									Mem_UB_out,
-									Mem_LB_out,
-									Mem_OE_out,
-									Mem_WE_out);
+				  inout logic [15:0] Mem_Bus, CPU_Bus,
+				  output logic CE,
+									UB,
+									LB,
+									OE,
+									WE);
 
 	wire 	LD_MAR,
 			LD_MDR,
@@ -72,11 +72,12 @@ module processor (input Clk, Reset, Run, Continue,
 	HexDriver out2(.In0(IR_out[11:8]), .Out0(HEX2));
 	HexDriver out3(.In0(IR_out[15:12]), .Out0(HEX3));
 	assign ADDR=MAR_out;
-	assign Data=MDR_out;
-	assign Mem_CE_out=Mem_CE;
-	assign Mem_UB_out=Mem_UB;
-	assign Mem_LB_out=Mem_LB;
-	assign Mem_OE_out=Mem_OE;
-	assign Mem_WE_out=Mem_WE;
+	assign MEM_Bus=MDR_out;
+	assign CE=Mem_CE;
+	assign UB=Mem_UB;
+	assign LB=Mem_LB;
+	assign OE=Mem_OE;
+	assign WE=Mem_WE;
+	assign CPU_Bus=Bus;
 	
 endmodule
