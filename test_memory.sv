@@ -33,14 +33,13 @@ module test_memory ( input 			Clk,
                                     UB,
                                     LB,
                                     OE,
-                                    WE );
+                                    WE);
 												
    parameter size = 64; // expand memory as needed (current is 64 words)
 	 
    logic [15:0] mem_array [size-1:0];
    logic [15:0] mem_out;
    logic [15:0] I_O_wire;
-	 
    assign mem_out = mem_array[A[5:0]];  //ATTENTION: Size here must correspond to size of
               // memory vector above.  Current size is 64, so the slice must be 6 bits.  If size were 1024,
               // slice would have to be 10 bits.  (There are three more places below where values must stay
@@ -57,6 +56,7 @@ module test_memory ( input 			Clk,
          if (~LB)
             I_O_wire[7:0] = mem_out[7:0];
 		end
+		
    end
 	  
    always_ff @ (posedge Clk or posedge Reset)

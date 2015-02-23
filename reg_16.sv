@@ -1,9 +1,9 @@
 module reg_16 (input Clk, Load, Reset,
 					input [15:0] D_in, 
-					output [15:0] R);
+					output logic [15:0] R_out);
 
 	integer i;
-	
+	reg[15:0] R;
 	always_ff @ (posedge Clk)
 	begin
 	 
@@ -15,5 +15,5 @@ module reg_16 (input Clk, Load, Reset,
 			R[i] <= D_in[i];
 		end
 	end
-
+	assign R_out=R;
 endmodule

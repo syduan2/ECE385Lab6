@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ECE385Lab6
-Sun Feb 22 17:47:36 2015
+Mon Feb 23 13:39:18 2015
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -20,19 +20,13 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: test_memory:MEMTEST
  14. Port Connectivity Checks: "test_memory:MEMTEST"
- 15. Port Connectivity Checks: "processor:CPU|reg_16:MAR"
- 16. Port Connectivity Checks: "processor:CPU|reg_16:MDR"
- 17. Port Connectivity Checks: "processor:CPU|carry_select_adder_16:PC_adder"
- 18. Port Connectivity Checks: "processor:CPU|tri_buffer_16:pc_gate"
- 19. Port Connectivity Checks: "processor:CPU|mux_4x1:PC_mux"
- 20. Port Connectivity Checks: "processor:CPU|reg_16:PC"
- 21. Port Connectivity Checks: "processor:CPU|reg_16:IR"
- 22. Port Connectivity Checks: "processor:CPU|ISDU:control"
- 23. Port Connectivity Checks: "processor:CPU"
- 24. Post-Synthesis Netlist Statistics for Top Partition
- 25. Elapsed Time Per Partition
- 26. Analysis & Synthesis Messages
- 27. Analysis & Synthesis Suppressed Messages
+ 15. Port Connectivity Checks: "processor:CPU|carry_select_adder_16:PC_adder"
+ 16. Port Connectivity Checks: "processor:CPU|mux_4x1:PC_mux"
+ 17. Port Connectivity Checks: "processor:CPU|ISDU:control"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
+ 21. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -59,15 +53,15 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Feb 22 17:47:36 2015      ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb 23 13:39:18 2015      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; ECE385Lab6                                 ;
 ; Top-level Entity Name              ; SLC3                                       ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 0                                          ;
-;     Total combinational functions  ; 0                                          ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
+; Total logic elements               ; 135                                        ;
+;     Total combinational functions  ; 126                                        ;
+;     Dedicated logic registers      ; 61                                         ;
+; Total registers                    ; 61                                         ;
 ; Total pins                         ; 48                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -186,51 +180,63 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; reg_16.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_16.sv                ;         ;
 ; processor.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv             ;         ;
 ; mux_4x1.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv               ;         ;
-; mux_2x1.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_2x1.sv               ;         ;
 ; ISDU.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/ISDU.sv                  ;         ;
 ; HexDriver.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/HexDriver.sv             ;         ;
 ; carry_select_adder_16.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/carry_select_adder_16.sv ;         ;
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 48    ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; S[0]  ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 48    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 135       ;
+;                                             ;           ;
+; Total combinational functions               ; 126       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 87        ;
+;     -- 3 input functions                    ; 19        ;
+;     -- <=2 input functions                  ; 20        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 111       ;
+;     -- arithmetic mode                      ; 15        ;
+;                                             ;           ;
+; Total registers                             ; 61        ;
+;     -- Dedicated logic registers            ; 61        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 48        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; Clk~input ;
+; Maximum fan-out                             ; 61        ;
+; Total fan-out                               ; 703       ;
+; Average fan-out                             ; 2.48      ;
++---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |SLC3                      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 48   ; 0            ; |SLC3               ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                  ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Library Name ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+; |SLC3                         ; 126 (0)           ; 61 (0)       ; 0           ; 0            ; 0       ; 0         ; 48   ; 0            ; |SLC3                                     ; work         ;
+;    |HexDriver:out0|           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|HexDriver:out0                      ; work         ;
+;    |HexDriver:out1|           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|HexDriver:out1                      ; work         ;
+;    |HexDriver:out2|           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|HexDriver:out2                      ; work         ;
+;    |HexDriver:out3|           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|HexDriver:out3                      ; work         ;
+;    |processor:CPU|            ; 88 (0)            ; 61 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU                       ; work         ;
+;       |ISDU:control|          ; 5 (5)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|ISDU:control          ; work         ;
+;       |reg_16:IR|             ; 17 (17)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|reg_16:IR             ; work         ;
+;       |reg_16:MAR|            ; 1 (1)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|reg_16:MAR            ; work         ;
+;       |reg_16:MDR|            ; 21 (21)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|reg_16:MDR            ; work         ;
+;       |reg_16:PC|             ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|reg_16:PC             ; work         ;
+;       |tri_buffer_16:pc_gate| ; 28 (28)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|tri_buffer_16:pc_gate ; work         ;
+;    |test_memory:MEMTEST|      ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|test_memory:MEMTEST                 ; work         ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -252,44 +258,1053 @@ Encoding Type:  One-Hot
 +----------------+------------+------------+--------------+--------------+------------+----------------+----------------+--------------+------------+
 
 
-+---------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                    ;
-+-------------------------------------------+-------------------------------------------+
-; Register name                             ; Reason for Removal                        ;
-+-------------------------------------------+-------------------------------------------+
-; processor:CPU|reg_16:IR|R[1..15]          ; Merged with processor:CPU|reg_16:IR|R[0]  ;
-; processor:CPU|reg_16:MDR|R[1..15]         ; Merged with processor:CPU|reg_16:MDR|R[0] ;
-; processor:CPU|reg_16:MDR|R[0]             ; Stuck at GND due to stuck port data_in    ;
-; processor:CPU|reg_16:IR|R[0]              ; Stuck at GND due to stuck port data_in    ;
-; processor:CPU|ISDU:control|State~4        ; Lost fanout                               ;
-; processor:CPU|ISDU:control|State~5        ; Lost fanout                               ;
-; processor:CPU|ISDU:control|State~6        ; Lost fanout                               ;
-; processor:CPU|ISDU:control|State.S_01     ; Stuck at GND due to stuck port data_in    ;
-; processor:CPU|ISDU:control|State.S_32     ; Stuck at GND due to stuck port data_in    ;
-; processor:CPU|ISDU:control|State.Halted   ; Lost fanout                               ;
-; processor:CPU|ISDU:control|State.PauseIR1 ; Lost fanout                               ;
-; processor:CPU|ISDU:control|State.PauseIR2 ; Lost fanout                               ;
-; processor:CPU|ISDU:control|State.S_18     ; Lost fanout                               ;
-; processor:CPU|ISDU:control|State.S_33_1   ; Lost fanout                               ;
-; processor:CPU|ISDU:control|State.S_33_2   ; Lost fanout                               ;
-; processor:CPU|ISDU:control|State.S_35     ; Lost fanout                               ;
-; Total Number of Removed Registers = 44    ;                                           ;
-+-------------------------------------------+-------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                     ;
++------------------------------------------+---------------------------------------------+
+; Register name                            ; Reason for Removal                          ;
++------------------------------------------+---------------------------------------------+
+; test_memory:MEMTEST|mem_array[0][0]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[63][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[62][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[61][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[60][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[59][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[58][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[57][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[56][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[55][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[54][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[53][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[52][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[51][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[50][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[49][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[48][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[47][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[46][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[45][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[44][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[43][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[42][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[41][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[40][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[39][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[38][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[37][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[36][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[35][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[34][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[33][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[32][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[31][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[30][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[29][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[28][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[27][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[26][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[25][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[24][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[23][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[22][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[21][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[20][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[19][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[18][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[17][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[16][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[15][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[14][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[13][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[12][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[11][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][15]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][14]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][13]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][12]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][11]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][10]    ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][9]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][8]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][7]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][6]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][5]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][4]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][3]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][2]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][1]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[10][0]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][15]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][14]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][13]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][12]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][11]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][10]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][9]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][8]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][7]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][6]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][5]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][4]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][3]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][2]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][1]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[9][0]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][15]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][14]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][13]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][12]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][11]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][10]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][9]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][8]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][7]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][6]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][5]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][4]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][3]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][2]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][1]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[8][0]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][15]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][14]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][13]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][12]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][11]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][10]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][9]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][8]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][7]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][6]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][5]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][4]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][3]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][2]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][1]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[7][0]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][15]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][14]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][13]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][12]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][11]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][10]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][9]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][8]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][7]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][6]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][5]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][4]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][3]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][2]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][1]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[6][0]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][15]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][14]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][13]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][12]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][11]     ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][10]     ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][9]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][8]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][7]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][6]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][5]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][4]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][3]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][2]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][1]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[5][0]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][15]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][14]     ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][13]     ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][12]     ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][11]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][10]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][9]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][8]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][7]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][6]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][5]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][4]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][3]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][2]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][1]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[4][0]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][15]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][14]     ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][13]     ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][12]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][11]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][10]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][9]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][8]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][7]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][6]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][5]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][4]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][3]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][2]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][1]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[3][0]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][15]     ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][14]     ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][13]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][12]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][11]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][10]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][9]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][8]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][7]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][6]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][5]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][4]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][3]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][2]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][1]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[2][0]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][15]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][14]     ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][13]     ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][12]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][11]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][10]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][9]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][8]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][7]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][6]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][5]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][4]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][3]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][2]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][1]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[1][0]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][15]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][14]     ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][13]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][12]     ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][11]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][10]     ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][9]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][8]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][7]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][6]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][5]      ; Stuck at VCC due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][4]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][3]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][2]      ; Stuck at GND due to stuck port clock_enable ;
+; test_memory:MEMTEST|mem_array[0][1]      ; Stuck at GND due to stuck port clock_enable ;
+; processor:CPU|reg_16:MAR|R[6..15]        ; Lost fanout                                 ;
+; processor:CPU|ISDU:control|State~4       ; Lost fanout                                 ;
+; processor:CPU|ISDU:control|State~5       ; Lost fanout                                 ;
+; processor:CPU|ISDU:control|State~6       ; Lost fanout                                 ;
+; processor:CPU|ISDU:control|State.S_32    ; Stuck at GND due to stuck port data_in      ;
+; processor:CPU|ISDU:control|State.S_01    ; Stuck at GND due to stuck port data_in      ;
+; Total Number of Removed Registers = 1039 ;                                             ;
++------------------------------------------+---------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                 ;
-+---------------------------------------+---------------------------+-----------------------------------------+
-; Register name                         ; Reason for Removal        ; Registers Removed due to This Register  ;
-+---------------------------------------+---------------------------+-----------------------------------------+
-; processor:CPU|reg_16:MDR|R[0]         ; Stuck at GND              ; processor:CPU|reg_16:IR|R[0]            ;
-;                                       ; due to stuck port data_in ;                                         ;
-; processor:CPU|ISDU:control|State~4    ; Lost Fanouts              ; processor:CPU|ISDU:control|State.S_33_1 ;
-; processor:CPU|ISDU:control|State~5    ; Lost Fanouts              ; processor:CPU|ISDU:control|State.S_33_2 ;
-; processor:CPU|ISDU:control|State~6    ; Lost Fanouts              ; processor:CPU|ISDU:control|State.S_18   ;
-; processor:CPU|ISDU:control|State.S_01 ; Stuck at GND              ; processor:CPU|ISDU:control|State.Halted ;
-;                                       ; due to stuck port data_in ;                                         ;
-+---------------------------------------+---------------------------+-----------------------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                ;
++---------------------------------------+---------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------------------------------+---------------------------+----------------------------------------+
+; processor:CPU|ISDU:control|State.S_32 ; Stuck at GND              ; processor:CPU|ISDU:control|State.S_01  ;
+;                                       ; due to stuck port data_in ;                                        ;
++---------------------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -297,12 +1312,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 61    ;
+; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 7     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 22    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -312,6 +1327,10 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |SLC3|processor:CPU|reg_16:MAR|R[5]                ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|reg_16:IR|R[2]                 ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |SLC3|processor:CPU|reg_16:PC|R[5]                 ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |SLC3|processor:CPU|reg_16:MDR|R[3]                ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |SLC3|processor:CPU|ISDU:control|Next_state.Halted ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
@@ -335,24 +1354,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+-------+----------+------------------+
 
 
-+------------------------------------------------------+
-; Port Connectivity Checks: "processor:CPU|reg_16:MAR" ;
-+-------+-------+----------+---------------------------+
-; Port  ; Type  ; Severity ; Details                   ;
-+-------+-------+----------+---------------------------+
-; Reset ; Input ; Info     ; Stuck at GND              ;
-+-------+-------+----------+---------------------------+
-
-
-+------------------------------------------------------+
-; Port Connectivity Checks: "processor:CPU|reg_16:MDR" ;
-+-------+-------+----------+---------------------------+
-; Port  ; Type  ; Severity ; Details                   ;
-+-------+-------+----------+---------------------------+
-; Reset ; Input ; Info     ; Stuck at GND              ;
-+-------+-------+----------+---------------------------+
-
-
 +-----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "processor:CPU|carry_select_adder_16:PC_adder"                                        ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
@@ -364,15 +1365,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "processor:CPU|tri_buffer_16:pc_gate" ;
-+------+-------+----------+---------------------------------------+
-; Port ; Type  ; Severity ; Details                               ;
-+------+-------+----------+---------------------------------------+
-; In   ; Input ; Info     ; Explicitly unconnected                ;
-+------+-------+----------+---------------------------------------+
-
-
 +----------------------------------------------------------+
 ; Port Connectivity Checks: "processor:CPU|mux_4x1:PC_mux" ;
 +------+-------+----------+--------------------------------+
@@ -381,24 +1373,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; In1  ; Input ; Info     ; Stuck at GND                   ;
 ; In3  ; Input ; Info     ; Stuck at GND                   ;
 +------+-------+----------+--------------------------------+
-
-
-+-----------------------------------------------------+
-; Port Connectivity Checks: "processor:CPU|reg_16:PC" ;
-+-------+-------+----------+--------------------------+
-; Port  ; Type  ; Severity ; Details                  ;
-+-------+-------+----------+--------------------------+
-; Reset ; Input ; Info     ; Stuck at GND             ;
-+-------+-------+----------+--------------------------+
-
-
-+-----------------------------------------------------+
-; Port Connectivity Checks: "processor:CPU|reg_16:IR" ;
-+-------+-------+----------+--------------------------+
-; Port  ; Type  ; Severity ; Details                  ;
-+-------+-------+----------+--------------------------+
-; Reset ; Input ; Info     ; Stuck at GND             ;
-+-------+-------+----------+--------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -421,27 +1395,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:CPU"                                                                        ;
-+---------+-------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type  ; Severity ; Details                                                                             ;
-+---------+-------+----------+-------------------------------------------------------------------------------------+
-; CPU_Bus ; Bidir ; Warning  ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+-------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 48                          ;
-; cycloneiii_lcell_comb ; 2                           ;
-;     normal            ; 2                           ;
-;         0 data inputs ; 2                           ;
+; cycloneiii_ff         ; 61                          ;
+;     CLR               ; 7                           ;
+;     ENA               ; 22                          ;
+;     SCLR              ; 32                          ;
+; cycloneiii_lcell_comb ; 130                         ;
+;     arith             ; 15                          ;
+;         2 data inputs ; 14                          ;
+;         3 data inputs ; 1                           ;
+;     normal            ; 115                         ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 18                          ;
+;         4 data inputs ; 87                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.42                        ;
 +-----------------------+-----------------------------+
 
 
@@ -460,9 +1435,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Sun Feb 22 17:47:21 2015
+    Info: Processing started: Mon Feb 23 13:39:07 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ECE385Lab6 -c ECE385Lab6
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.sv
+    Info (12023): Found entity 1: testbench
 Info (12021): Found 1 design units, including 1 entities, in source file tri_buffer_16.sv
     Info (12023): Found entity 1: tri_buffer_16
 Info (12021): Found 2 design units, including 1 entities, in source file test_memory.sv
@@ -488,85 +1465,37 @@ Info (12021): Found 1 design units, including 1 entities, in source file hexdriv
 Info (12021): Found 1 design units, including 1 entities, in source file carry_select_adder_16.sv
     Info (12023): Found entity 1: carry_select_adder_16
 Info (12127): Elaborating entity "SLC3" for the top level hierarchy
-Warning (10855): Verilog HDL warning at SLC3.sv(10): initial value for variable WTF_IS_A should be constant
-Warning (10030): Net "WTF_IS_A[19..16]" at SLC3.sv(9) has no driver or initial value, using a default initial value '0'
 Info (12128): Elaborating entity "processor" for hierarchy "processor:CPU"
 Info (12128): Elaborating entity "ISDU" for hierarchy "processor:CPU|ISDU:control"
 Info (12128): Elaborating entity "reg_16" for hierarchy "processor:CPU|reg_16:IR"
 Info (12128): Elaborating entity "mux_4x1" for hierarchy "processor:CPU|mux_4x1:PC_mux"
 Info (12128): Elaborating entity "tri_buffer_16" for hierarchy "processor:CPU|tri_buffer_16:pc_gate"
 Info (12128): Elaborating entity "carry_select_adder_16" for hierarchy "processor:CPU|carry_select_adder_16:PC_adder"
-Info (12128): Elaborating entity "mux_2x1" for hierarchy "processor:CPU|mux_2x1:MDR_mux"
-Info (12128): Elaborating entity "HexDriver" for hierarchy "processor:CPU|HexDriver:out0"
 Info (12128): Elaborating entity "test_memory" for hierarchy "test_memory:MEMTEST"
+Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:out0"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[15]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[14]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[13]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[12]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[11]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[10]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[9]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[8]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[7]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[6]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[5]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[4]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[3]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[2]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[1]" into a selector
-    Warning (13048): Converted tri-state node "processor:CPU|Bus[0]" into a selector
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[0]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[1]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[2]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[3]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[4]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[5]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[6]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[7]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[8]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[9]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[10]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[11]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[12]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[13]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[14]" feeding internal logic into a wire
-    Warning (13049): Converted tri-state buffer "processor:CPU|tri_buffer_16:mdr_gate_SRAM|Out[15]" feeding internal logic into a wire
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND
-    Warning (13410): Pin "HEX0[1]" is stuck at GND
-    Warning (13410): Pin "HEX0[2]" is stuck at GND
-    Warning (13410): Pin "HEX0[3]" is stuck at GND
-    Warning (13410): Pin "HEX0[4]" is stuck at GND
-    Warning (13410): Pin "HEX0[5]" is stuck at GND
-    Warning (13410): Pin "HEX0[6]" is stuck at VCC
-    Warning (13410): Pin "HEX1[0]" is stuck at GND
-    Warning (13410): Pin "HEX1[1]" is stuck at GND
-    Warning (13410): Pin "HEX1[2]" is stuck at GND
-    Warning (13410): Pin "HEX1[3]" is stuck at GND
-    Warning (13410): Pin "HEX1[4]" is stuck at GND
-    Warning (13410): Pin "HEX1[5]" is stuck at GND
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC
-    Warning (13410): Pin "HEX2[0]" is stuck at GND
-    Warning (13410): Pin "HEX2[1]" is stuck at GND
-    Warning (13410): Pin "HEX2[2]" is stuck at GND
-    Warning (13410): Pin "HEX2[3]" is stuck at GND
-    Warning (13410): Pin "HEX2[4]" is stuck at GND
-    Warning (13410): Pin "HEX2[5]" is stuck at GND
-    Warning (13410): Pin "HEX2[6]" is stuck at VCC
-    Warning (13410): Pin "HEX3[0]" is stuck at GND
-    Warning (13410): Pin "HEX3[1]" is stuck at GND
-    Warning (13410): Pin "HEX3[2]" is stuck at GND
-    Warning (13410): Pin "HEX3[3]" is stuck at GND
-    Warning (13410): Pin "HEX3[4]" is stuck at GND
-    Warning (13410): Pin "HEX3[5]" is stuck at GND
-    Warning (13410): Pin "HEX3[6]" is stuck at VCC
-Info (17049): 10 registers lost all their fanouts during netlist optimizations.
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[0]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[1]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[2]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[3]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[4]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[5]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[6]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[7]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[8]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[9]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[10]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[11]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[12]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[13]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[14]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[15]" to the node "processor:CPU|reg_16:MDR|R" into an OR gate
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 13 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/Sunny/Documents/GitHub/ECE385Lab6/output_files/ECE385Lab6.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 20 input pin(s) that do not drive logic
+Warning (21074): Design contains 16 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "S[0]"
     Warning (15610): No output dependent on input pin "S[1]"
     Warning (15610): No output dependent on input pin "S[2]"
@@ -583,18 +1512,15 @@ Warning (21074): Design contains 20 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "S[13]"
     Warning (15610): No output dependent on input pin "S[14]"
     Warning (15610): No output dependent on input pin "S[15]"
-    Warning (15610): No output dependent on input pin "Run"
-    Warning (15610): No output dependent on input pin "Continue"
-    Warning (15610): No output dependent on input pin "Clk"
-    Warning (15610): No output dependent on input pin "Reset"
-Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 189 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 20 input pins
     Info (21059): Implemented 28 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 87 warnings
-    Info: Peak virtual memory: 613 megabytes
-    Info: Processing ended: Sun Feb 22 17:47:36 2015
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:39
+    Info (21061): Implemented 141 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 616 megabytes
+    Info: Processing ended: Mon Feb 23 13:39:18 2015
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+

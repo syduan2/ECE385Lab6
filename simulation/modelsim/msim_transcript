@@ -1,0 +1,159 @@
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+# do ECE385Lab6_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/tri_buffer_16.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:40:26 on Feb 23,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/tri_buffer_16.sv 
+# -- Compiling module tri_buffer_16
+# 
+# Top level modules:
+# 	tri_buffer_16
+# End time: 13:40:26 on Feb 23,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3_2.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:40:26 on Feb 23,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3_2.sv 
+# -- Compiling package SLC3_2
+# 
+# Top level modules:
+# 	--none--
+# End time: 13:40:26 on Feb 23,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_16.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:40:26 on Feb 23,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_16.sv 
+# -- Compiling module reg_16
+# 
+# Top level modules:
+# 	reg_16
+# End time: 13:40:26 on Feb 23,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:40:26 on Feb 23,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv 
+# -- Compiling module mux_4x1
+# 
+# Top level modules:
+# 	mux_4x1
+# End time: 13:40:26 on Feb 23,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/ISDU.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:40:26 on Feb 23,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/ISDU.sv 
+# -- Compiling module ISDU
+# 
+# Top level modules:
+# 	ISDU
+# End time: 13:40:26 on Feb 23,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/HexDriver.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:40:26 on Feb 23,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 13:40:26 on Feb 23,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/carry_select_adder_16.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:40:26 on Feb 23,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/carry_select_adder_16.sv 
+# -- Compiling module carry_select_adder_16
+# 
+# Top level modules:
+# 	carry_select_adder_16
+# End time: 13:40:26 on Feb 23,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:40:26 on Feb 23,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv 
+# -- Compiling package SLC3_2
+# -- Compiling package test_memory_sv_unit
+# -- Importing package SLC3_2
+# -- Compiling module test_memory
+# 
+# Top level modules:
+# 	test_memory
+# End time: 13:40:26 on Feb 23,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:40:26 on Feb 23,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv 
+# -- Compiling module processor
+# 
+# Top level modules:
+# 	processor
+# End time: 13:40:26 on Feb 23,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:40:26 on Feb 23,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv 
+# -- Compiling module SLC3
+# 
+# Top level modules:
+# 	SLC3
+# End time: 13:40:26 on Feb 23,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 13:40:26 on Feb 23,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 13:40:26 on Feb 23,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -gui "+altera" -l msim_transcript -do "ECE385Lab6_run_msim_rtl_verilog.do" 
+# Start time: 13:40:26 on Feb 23,2015
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.SLC3
+# Loading work.processor
+# Loading work.ISDU
+# Loading work.reg_16
+# Loading work.mux_4x1
+# Loading work.tri_buffer_16
+# Loading work.carry_select_adder_16
+# Loading work.SLC3_2
+# Loading work.test_memory_sv_unit
+# Loading work.test_memory
+# Loading work.HexDriver
+# ** Warning: (vsim-3839) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv(11): Variable '/testbench/LC3/WTF_IS_A', driven via a port connection, is multiply driven. See C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv(13).
+# 
+#         Region: /testbench/LC3
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
+# 
+# End time: 13:40:35 on Feb 23,2015, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 2

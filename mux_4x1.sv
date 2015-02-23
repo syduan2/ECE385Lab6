@@ -1,4 +1,4 @@
-module mux_4x1(input[15:0] In0, In1, In2, In3, input[1:0] select, output[15:0] Out);
+module mux_4x1(input[15:0] In0, In1, In2, In3, input[1:0] select, output logic[15:0] Out);
 
 	always_comb
 	begin
