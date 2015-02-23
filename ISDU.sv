@@ -71,7 +71,7 @@ module ISDU ( 	input	Clk,
             Halted : 
 	            if (Run) 
 					Next_state <= S_18;					  
-            S_18 :									
+            S_18 :
 						Next_state <= S_33_1;
             S_33_1 :
 						Next_state <= S_33_2;
