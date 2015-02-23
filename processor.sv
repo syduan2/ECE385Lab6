@@ -5,7 +5,7 @@ module processor (input Clk, Reset, Run, Continue,
 				  					 HEX2,
 				  					 HEX3,
 				  output logic [15:0] ADDR,
-				  inout logic [15:0] Mem_Bus, CPU_Bus,
+				  inout logic [15:0] CPU_Bus, Mem_Bus,
 				  output logic CE,
 									UB,
 									LB,
@@ -39,7 +39,7 @@ module processor (input Clk, Reset, Run, Continue,
 			Mem_LB,
 			Mem_OE, //Output Enable
 	   	Mem_WE; //Write Enable
-	wire[15:0] IR_out, Bus, SRAM_bus,
+	wire[15:0] IR_out, Bus,
 			PC_out,PC_out_1, PC_in,
 			MDR_in, MDR_out,
 			MAR_out;
@@ -73,7 +73,7 @@ module processor (input Clk, Reset, Run, Continue,
 	HexDriver out2(.In0(IR_out[11:8]), .Out0(HEX2));
 	HexDriver out3(.In0(IR_out[15:12]), .Out0(HEX3));
 	assign ADDR=MAR_out;
-	assign Mem_Bus=MDR_out;
+//	assign Mem_Bus=MDR_out;
 	assign CE=Mem_CE;
 	assign UB=Mem_UB;
 	assign LB=Mem_LB;
