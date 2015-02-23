@@ -60,10 +60,11 @@ module processor (input Clk, Reset, Run, Continue,
 	
 	
 	//MDR
-	reg_16 MDR(.*, .Load(LD_MDR), .Reset(0), .D_in(MDR_in), .R(MDR_out));
-	mux_2x1 MDR_mux(.In0(Bus), .In1(SRAM_bus), .select(Mem_OE), .Out(MDR_in));
+//	reg_16 MDR(.*, .Load(LD_MDR), .Reset(0), .D_in(MDR_in), .R(MDR_out));
+//	mux_2x1 MDR_mux(.In0(Bus), .In1(SRAM_bus), .select(Mem_OE), .Out(MDR_in));
+	reg_16 MDR(.*, .Load(LD_MDR), .Reset(0), .D_in(Bus), .R(MDR_out));
 	tri_buffer_16 mdr_gate_PC(.Enable(GateMDR), .In(MDR_out), .Out(Bus));
-	tri_buffer_16 mdr_gate_SRAM(.Enable(GateMDR), .In(MDR_out), .Out(SRAM_bus));
+//	tri_buffer_16 mdr_gate_SRAM(.Enable(GateMDR), .In(MDR_out), .Out(SRAM_bus));
 	
 	reg_16 MAR(.*, .Load(LD_MAR), .Reset(0), .D_in(Bus), .R(MAR_out));
 	
