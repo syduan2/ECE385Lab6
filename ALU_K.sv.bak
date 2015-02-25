@@ -1,0 +1,19 @@
+module ALU_K (input [15:0] A_in, B_in,
+				  input [1:0] ALUK,
+				  output [15:0] ALU_K_out);
+				  
+	always_comb
+	begin
+		unique case (ALUK)
+			3'b000: ALU_K_out = A_in + B_in;
+			3'b001: ALU_K_out = A_in - B_in;
+			3'b010: ALU_K_out = A_in & B_in;
+			3'b011: ALU_K_out = A_in | B_in;
+			3'b100: ALU_K_out = A_in ^ B_in;
+			3'b101: ALU_K_out = ~A_in;
+			3'b110: ALU_K_out = 1'b0;
+			default: ALU_K_out = A_in;
+		endcase
+	end
+
+endmodule

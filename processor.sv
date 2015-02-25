@@ -85,15 +85,21 @@ module processor (input Clk, Reset, Run, Continue,
 	mux_2x1 MARMUX_mux(.In0(ZEXT), .In1(add_adder), .select(MARMUX), .Out(MARMUX_out)); // 0 is PC, 1 is Addition Adder
 	tri_buffer_16 marmux_gate(.Enable(GateMARMUX), .In(MARMUX_out), .Out(CPU_Bus));
 	
+	//nzp Thing
+	nzp nzp_logic
+	
 	//REGFILE
-	wire [15:0] SR1_in, SR2_out, SR1_out;
+	wire [15:0] SR1_in, SR2_out, SR1_out, DR_in;
 	//need to add SR1 SR2 DR Outputs in ISDU and Inputs in processor
-	regfile REGFILE(.*, .Load(LD_REG), .SR1(SR1_in), .SR2(), .DR(), .Bus(CPU_Bus));
-	mux_2x1 SR1MUX_mux(.In0(IR_Out[11:9]), .In1(IR_Out[8:6]), .select(SR1MUX), .Out(SR1_in)); // THIS IS NOT CORRECT. Why is SR1 2 bits??
+	regfile REGFILE(.*, .Load(LD_REG), .SR1(SR1_in), .SR2(IR_out[2:0]), .DR(DR_in), .Bus(CPU_Bus)); //SR2 is always [2:0] right??
+	mux_4x1 SR1MUX_mux(.In0(IR_out[11:9]), .In1(IR_out[8:6]), .In2(3'b110), .In3(3'b0), .select(SR1MUX), .Out(SR1_in));
+	mux_4x1 DRMUX_mux(.In0(IR_out[11:9]), .In1(3'b110), .In2(3'b111), .In3(3'b0), .select(DRMUX), .Out(DR_in));
 	
 	//ALU
-	//mux_2x1 SR2MUX_mux
-	//ALU THINGY
+	wire [15:0]SR2MUX_out, ALU_out;
+	mux_2x1 SR2MUX_mux(.In0(SEXT5), .In1(SR2_out), .select(SR2MUX), .Out(SR2MUX_out));
+	ALU_K ALU(.*, .A_in(SR1_out), .B_in(SR2MUX_out), .ALU_K_out(ALU_out));
+	tri_buffer_16 alu_gate(.Enable(GateALU), .In(ALU_out), .Bus(CPU_Bus));
 	
 	//Addition Adder + ADDR1MUX/ADDR2MUX
 	wire [15:0] ADD_in1, ADD_in2;

@@ -14,43 +14,46 @@
 //------------------------------------------------------------------------------
 
 
-module ISDU ( 	input	Clk, 
-                        Reset,
-						Run,
-						Continue,
-						ContinueIR,
+module ISDU (input Clk, 
+                   Reset,
+						 Run,
+						 Continue,
+						 ContinueIR,
 									
-				input [3:0]  Opcode, 
-				input        IR_5,
+				input [3:0]Opcode, 
+				
+				input IR_5,
 				  
-				output logic 	LD_MAR,
-								LD_MDR,
-								LD_IR,
-								LD_BEN,
-								LD_CC,
-								LD_REG,
-								LD_PC,
+				output logic LD_MAR,
+								 LD_MDR,
+								 LD_IR,
+								 LD_BEN,
+								 LD_CC,
+								 LD_REG,
+								 LD_PC,
 									
-				output logic 	GatePC,
-								GateMDR,
-								GateALU,
-								GateMARMUX,
+				output logic GatePC,
+								 GateMDR,
+								 GateALU,
+								 GateMARMUX,
 									
-				output logic [1:0] 	PCMUX,
-				                    DRMUX,
-									SR1MUX,
-				output logic 		SR2MUX,
-									ADDR1MUX,
-				output logic [1:0] 	ADDR2MUX,
-				output logic 		MARMUX,
+				output logic [1:0]PCMUX,
+				                  DRMUX,
+									   SR1MUX,
+										
+				output logic SR2MUX,
+								 ADDR1MUX,
+				output logic [1:0] ADDR2MUX,
+				
+				output logic MARMUX,
 				  
-				output logic [1:0] 	ALUK,
+				output logic [1:0]ALUK,
 				  
-				output logic 		Mem_CE,
-									Mem_UB,
-									Mem_LB,
-									Mem_OE,
-									Mem_WE
+				output logic Mem_CE,
+								 Mem_UB,
+								 Mem_LB,
+								 Mem_OE,
+								 Mem_WE
 				);
 
     enum logic [3:0] {Halted, PauseIR1, PauseIR2, S_18, S_33_1, S_33_2, S_35, S_32, S_01}   State, Next_state;   // Internal state logic
