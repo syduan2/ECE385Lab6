@@ -1,17 +1,13 @@
 module processor (input Clk, Reset, Run, Continue,
-				  input [15:0] S,
-				  //output logic [6:0] HEX0,
-				  //					 HEX1,
-				  //					 HEX2,
-				  //					 HEX3,
-				  output logic [15:0] ADDR,
-				  inout  [15:0] CPU_Bus,
-					output logic[15:0] IR_val,
-				  output logic CE,
-									UB,
-									LB,
-									OE,
-									WE);
+						input [15:0] S,
+						output logic [15:0] ADDR,
+						inout  [15:0] CPU_Bus,
+						output logic[15:0] IR_val,
+						output logic CE,
+										 UB,
+										 LB,
+										 OE,
+										 WE);
 
 	wire 	LD_MAR,
 			LD_MDR,
@@ -56,7 +52,7 @@ module processor (input Clk, Reset, Run, Continue,
 	
 	
 	//I-seh-Desu
-	ISDU control(.*,.ContinueIR(Continue),.Opcode(IR_out[15:12]),.IR_5(IR_out[5]));
+	ISDU control(.*,.ContinueIR(Continue),.Opcode(IR_out[15:12]),.IR_5(IR_out[5]), .BEN(BEN_out));
 	
 	//IR
 	reg_16 IR(.*, .Load(LD_IR), .Reset(Reset), .D_in(CPU_Bus), .R_out(IR_out));
@@ -86,10 +82,14 @@ module processor (input Clk, Reset, Run, Continue,
 	tri_buffer_16 marmux_gate(.Enable(GateMARMUX), .In(MARMUX_out), .Out(CPU_Bus));
 	
 	//nzp Thing
-	nzp nzp_logic
+	wire [2:0] NZP_in, NZP_out;
+	wire BEN_out;
+	nzp_logic NZP_logic (.D_in(CPU_Bus), .D_out(NZP_in));
+	reg_3 NZP_reg (.*, .Load(LD_CC), .D_in(NZP_in), .R_out(NZP_out));
+	reg_1 BEN_reg (.*, .Load(LD_BEN), .D_in1(NZP_out), .D_in2(IR_out[11:9]), .R_out(BEN_out));
 	
 	//REGFILE
-	wire [15:0] SR1_in, SR2_out, SR1_out, DR_in;
+	wire [15:0] SR1_in, SR2_Out, SR1_Out, DR_in;
 	//need to add SR1 SR2 DR Outputs in ISDU and Inputs in processor
 	regfile REGFILE(.*, .Load(LD_REG), .SR1(SR1_in), .SR2(IR_out[2:0]), .DR(DR_in), .Bus(CPU_Bus)); //SR2 is always [2:0] right??
 	mux_4x1 SR1MUX_mux(.In0(IR_out[11:9]), .In1(IR_out[8:6]), .In2(3'b110), .In3(3'b0), .select(SR1MUX), .Out(SR1_in));
@@ -97,41 +97,23 @@ module processor (input Clk, Reset, Run, Continue,
 	
 	//ALU
 	wire [15:0]SR2MUX_out, ALU_out;
-	mux_2x1 SR2MUX_mux(.In0(SEXT5), .In1(SR2_out), .select(SR2MUX), .Out(SR2MUX_out));
-	ALU_K ALU(.*, .A_in(SR1_out), .B_in(SR2MUX_out), .ALU_K_out(ALU_out));
-	tri_buffer_16 alu_gate(.Enable(GateALU), .In(ALU_out), .Bus(CPU_Bus));
+	mux_2x1 SR2MUX_mux(.In0(sext_5), .In1(SR2_Out), .select(SR2MUX), .Out(SR2MUX_out));
+	ALU_K ALU(.*, .A_in(SR1_Out), .B_in(SR2MUX_out), .ALU_K_out(ALU_out));
+	tri_buffer_16 alu_gate(.Enable(GateALU), .In(ALU_out), .Out(CPU_Bus));
 	
 	//Addition Adder + ADDR1MUX/ADDR2MUX
 	wire [15:0] ADD_in1, ADD_in2;
-	mux_2x1 ADDR1MUX_mux(.In0(SR1_out), .In1(PC_out), .select(ADDR1MUX), .Out(ADD_in1)); // 0 is SR1, 1 is PC
-	mux_4x1 ADDR2MUX_mux(.In0(SEXT11), .In1(SEXT9), .In2(SEXT6), .In3(16'b0), .select(ADDR2MUX), .Out(ADD_in2));
+	mux_2x1 ADDR1MUX_mux(.In0(SR1_Out), .In1(PC_out), .select(ADDR1MUX), .Out(ADD_in1)); // 0 is SR1, 1 is PC
+	mux_4x1 ADDR2MUX_mux(.In0(sext_11), .In1(sext_9), .In2(sext_6), .In3(16'b0), .select(ADDR2MUX), .Out(ADD_in2));
 	wire [15:0] add_adder;
 	assign add_adder = ADD_in1 + ADD_in2;
 	
 	//SEXTs-------------------------------
-	wire [15:0] SEXT11;
-	assign SEXT11[10:0] = IR_out[10:0];
-   integer i;
-	for (i = 11; i < 16; i = i + 1) // FOR LOOPS NOT WORKING WAT
-		assign SEXT11[i] = IR_out[10];
-		
-	wire [15:0] SEXT9;
-	assign SEXT9[8:0] = IR_out[8:0];
-	integer j;
-	for(j = 9; j < 16; j = j + 1)
-		assign SEXT9[i] = IR_out[8];
-
-	wire [15:0] SEXT6;
-	assign SEXT6[5:0] = IR_out[5:0];
-	integer k;
-	for (k = 6; k < 16; k = k + 1)
-		assign SEXT6[i] = IR_out[5];
-		
-	wire [15:0] SEXT5;
-	assign SEXT5[4:0] = IR_out[4:0];
-	integer l;
-	for (l = 5; l < 16; l = l + 1)
-		assign SEXT5[i] = IR_out[4];
+	wire [15:0] SEXT11_out, SEXT9_out, SEXT6_out, SEXT5_out;
+	SEXT11 sext_11 (.*, .Input(IR_out[10:0]));
+	SEXT9 sext_9 (.*, .Input(IR_out[8:0]));
+	SEXT6 sext_6 (.*, .Input(IR_out[5:0]));
+	SEXT5 sext_5 (.*, .Input(IR_out[4:0]));
 	//-------------------------------------
 
 	assign ADDR=MAR_out;
