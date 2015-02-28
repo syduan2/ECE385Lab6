@@ -1,5 +1,5 @@
 Flow report for ECE385Lab6
-Tue Feb 24 15:11:07 2015
+Sat Feb 28 16:19:11 2015
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -41,22 +41,22 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Feb 24 15:11:07 2015      ;
+; Flow Status                        ; Successful - Sat Feb 28 16:19:11 2015      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; ECE385Lab6                                 ;
 ; Top-level Entity Name              ; SLC3                                       ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 142 / 114,480 ( < 1 % )                    ;
-;     Total combinational functions  ; 126 / 114,480 ( < 1 % )                    ;
-;     Dedicated logic registers      ; 71 / 114,480 ( < 1 % )                     ;
-; Total registers                    ; 71                                         ;
-; Total pins                         ; 89 / 529 ( 17 % )                          ;
+; Total logic elements               ; 606                                        ;
+;     Total combinational functions  ; 439                                        ;
+;     Dedicated logic registers      ; 216                                        ;
+; Total registers                    ; 216                                        ;
+; Total pins                         ; 101                                        ;
 ; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                      ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                            ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/24/2015 15:10:17 ;
+; Start date & time ; 02/28/2015 16:19:00 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ECE385Lab6          ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 114448686569932.142481221709208       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 114448686569932.142516194005920       ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; testbench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                     ; --            ; --          ; eda_simulation ;
@@ -100,41 +100,29 @@ agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 604 MB              ; 00:00:30                           ;
-; Fitter                    ; 00:00:21     ; 1.0                     ; 1034 MB             ; 00:00:20                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 563 MB              ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 680 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 534 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:42     ; --                      ; --                  ; 00:00:59                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 607 MB              ; 00:00:25                           ;
+; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:25                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; Sunny-PC         ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; Sunny-PC         ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; Sunny-PC         ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; Sunny-PC         ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; Sunny-PC         ; Windows 7 ; 6.2        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; Sunny-PC         ; Windows 7 ; 6.2        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off ECE385Lab6 -c ECE385Lab6
-quartus_fit --read_settings_files=off --write_settings_files=off ECE385Lab6 -c ECE385Lab6
-quartus_asm --read_settings_files=off --write_settings_files=off ECE385Lab6 -c ECE385Lab6
-quartus_sta ECE385Lab6 -c ECE385Lab6
-quartus_eda --read_settings_files=off --write_settings_files=off ECE385Lab6 -c ECE385Lab6
 
 
 

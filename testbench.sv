@@ -9,6 +9,7 @@ timeprecision 1ns;
 logic Clk = 0;
 logic Reset, Run, Continue;
 logic [15:0] S;
+logic [11:0] LED;
 logic[19:0] A;
 logic OE_out, WE_out, CE_out, UB_out, LB_out;
 wire[15:0] Bus;

@@ -1,6 +1,7 @@
 module processor (input Clk, Reset, Run, Continue,
 						input [15:0] S,
 						output logic [15:0] ADDR,
+						output logic [11:0] LED,
 						inout  [15:0] CPU_Bus,
 						output logic[15:0] IR_val,
 						output logic CE,
@@ -16,6 +17,7 @@ module processor (input Clk, Reset, Run, Continue,
 			LD_CC,
 			LD_REG,
 			LD_PC,
+			LD_LED,
 			GatePC,
 		   GateMDR,
 		   GateALU,
@@ -52,7 +54,7 @@ module processor (input Clk, Reset, Run, Continue,
 	
 	
 	//I-seh-Desu
-	ISDU control(.*,.ContinueIR(Continue),.Opcode(IR_out[15:12]),.IR_5(IR_out[5]), .BEN(BEN_out));
+	ISDU control(.*,.Opcode(IR_out[15:12]),.IR_5(IR_out[5]), .BEN(BEN_out));
 	
 	//IR
 	reg_16 IR(.*, .Load(LD_IR), .Reset(Reset), .D_in(CPU_Bus), .R_out(IR_out));
@@ -115,7 +117,7 @@ module processor (input Clk, Reset, Run, Continue,
 	SEXT6 sext_6 (.*, .Input(IR_out[5:0]));
 	SEXT5 sext_5 (.*, .Input(IR_out[4:0]));
 	//-------------------------------------
-
+	assign LED= LD_LED ? IR_out[11:0] : 12'b0; 
 	assign ADDR=MAR_out;
 //	assign Mem_Bus=MDR_out;
 	assign CE=Mem_CE;

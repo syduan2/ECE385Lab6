@@ -5,6 +5,7 @@ module SLC3(input Clk, Reset, Run, Continue,
 				  					 HEX2,
 				  					 HEX3,
 					output logic[19:0] A,
+					output logic[11:0] LED,
 					inout [15:0] Bus,
 					output logic OE_out, WE_out, CE_out, UB_out, LB_out);
 	wire CE, UB, LB, OE, WE;
