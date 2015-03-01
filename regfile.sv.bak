@@ -1,7 +1,7 @@
 module regfile (input Clk, Load, Reset, 
 					 input [2:0] SR1, SR2, DR,
 					 inout [15:0] Bus,
-					 output [15:0] SR2_Out, SR1_Out);
+					 output logic [15:0] SR2_Out, SR1_Out);
 					 
 	wire [15:0] R0_Out,
 					R1_Out,
@@ -21,14 +21,14 @@ module regfile (input Clk, Load, Reset,
 		  LoadR6,
 		  LoadR7;
 					 
-	reg_16 R0 (.*, .Load(LoadR0), .D_in(Bus), .R_out(R0_Out);
-	reg_16 R1 (.*, .Load(LoadR1), .D_in(Bus), .R_out(R1_Out);
-	reg_16 R2 (.*, .Load(LoadR2), .D_in(Bus), .R_out(R2_Out);
-	reg_16 R3 (.*, .Load(LoadR3), .D_in(Bus), .R_out(R3_Out);
-	reg_16 R4 (.*, .Load(LoadR4), .D_in(Bus), .R_out(R4_Out);
-	reg_16 R5 (.*, .Load(LoadR5), .D_in(Bus), .R_out(R5_Out);
-	reg_16 R6 (.*, .Load(LoadR6), .D_in(Bus), .R_out(R6_Out);
-	reg_16 R7 (.*, .Load(LoadR7), .D_in(Bus), .R_out(R7_Out);
+	reg_16 R0 (.*, .Load(LoadR0), .D_in(Bus), .R_out(R0_Out));
+	reg_16 R1 (.*, .Load(LoadR1), .D_in(Bus), .R_out(R1_Out));
+	reg_16 R2 (.*, .Load(LoadR2), .D_in(Bus), .R_out(R2_Out));
+	reg_16 R3 (.*, .Load(LoadR3), .D_in(Bus), .R_out(R3_Out));
+	reg_16 R4 (.*, .Load(LoadR4), .D_in(Bus), .R_out(R4_Out));
+	reg_16 R5 (.*, .Load(LoadR5), .D_in(Bus), .R_out(R5_Out));
+	reg_16 R6 (.*, .Load(LoadR6), .D_in(Bus), .R_out(R6_Out));
+	reg_16 R7 (.*, .Load(LoadR7), .D_in(Bus), .R_out(R7_Out));
 	
 	always_comb
 	begin
@@ -82,3 +82,5 @@ module regfile (input Clk, Load, Reset,
 		endcase
 		
 	end
+
+endmodule

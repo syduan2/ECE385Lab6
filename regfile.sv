@@ -1,7 +1,7 @@
 module regfile (input Clk, Load, Reset, 
 					 input [2:0] SR1, SR2, DR,
 					 inout [15:0] Bus,
-					 output [15:0] SR2_Out, SR1_Out);
+					 output logic [15:0] SR2_Out, SR1_Out);
 					 
 	wire [15:0] R0_Out,
 					R1_Out,
@@ -12,7 +12,7 @@ module regfile (input Clk, Load, Reset,
 					R6_Out,
 					R7_Out;
 	
-	wire LoadR0,
+	logic LoadR0,
 		  LoadR1,
 		  LoadR2,
 		  LoadR3,

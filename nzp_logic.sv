@@ -1,5 +1,5 @@
 module nzp_logic (input [15:0] D_in,
-						output [2:0] D_out);
+						output logic [2:0] D_out);
 					
 	always_comb
 	begin

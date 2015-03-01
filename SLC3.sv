@@ -6,10 +6,10 @@ module SLC3(input Clk, Reset, Run, Continue,
 				  					 HEX3,
 					output logic[19:0] A,
 					output logic[11:0] LED,
-					inout [15:0] Bus,
+					inout [15:0] Mem_bus,
 					output logic OE_out, WE_out, CE_out, UB_out, LB_out);
 	wire CE, UB, LB, OE, WE;
-	wire[15:0] IR_val, Mem_bus;	
+	wire[15:0] IR_val, Bus;	
 	//wire[15:0] Bus;
 	wire[3:0] hex0,hex1,hex2,hex3;
 	logic[19:0] WTF_IS_A; //is it address?

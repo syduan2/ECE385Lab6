@@ -1,5 +1,5 @@
 module SEXT5 (input [4:0] Input,
-					output [15:0] SEXT5_out);
+					output logic [15:0] SEXT5_out);
 					
 	integer i;
 			

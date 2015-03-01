@@ -12,7 +12,7 @@ logic [15:0] S;
 logic [11:0] LED;
 logic[19:0] A;
 logic OE_out, WE_out, CE_out, UB_out, LB_out;
-wire[15:0] Bus;
+wire[15:0] Mem_Bus;
 logic [6:0]HEX0,HEX1,HEX2,HEX3;
 		
 // Instantiating the DUT
@@ -37,7 +37,7 @@ initial begin: TEST_VECTORS
 Reset = 0;		// Toggle Rest
 Run = 1;
 Continue = 1;
-
+S=16'h3333;
 
 #2 Reset = 1;
 

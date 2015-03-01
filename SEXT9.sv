@@ -1,5 +1,5 @@
 module SEXT9 (input [8:0] Input,
-					output [15:0] SEXT9_out);
+					output logic[15:0] SEXT9_out);
 					
 	integer i;
 			

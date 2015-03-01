@@ -1,6 +1,6 @@
 module ALU_K (input [15:0] A_in, B_in,
 				  input [1:0] ALUK,
-				  output [15:0] ALU_K_out);
+				  output logic [15:0] ALU_K_out);
 				  
 	always_comb
 	begin
