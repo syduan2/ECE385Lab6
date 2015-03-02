@@ -129,6 +129,14 @@ module ISDU (input Clk,
 					Next_state <= S_25_2;
 				S_25_2 :
 					Next_state <= S_27;
+				S_07 :
+					Next_state <= S_23;
+				S_23 : 
+					Next_state <= S_16_1;
+				S_16_1:
+					Next_state <= S_16_2;
+				S_04_1:
+					Next_state <= S_04_2;
 			default : 
 					Next_state<=S_18;
 			
@@ -286,11 +294,14 @@ module ISDU (input Clk,
 						LD_MDR=1'b1;
 					end
 				S_16_1 : 
-					Mem_WE=1'b0;
+					begin
+						Mem_WE=1'b0;
+						GateMDR=1'b1;
+					end
 				S_16_2 :
 					begin
 						Mem_WE=1'b0;
-						LD_MDR=1'b1;
+						GateMDR=1'b1;
 					end
             default : ;
            endcase

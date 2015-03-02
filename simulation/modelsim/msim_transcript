@@ -14,209 +14,232 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/ALU_K.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:05 on Mar 01,2015
+# Start time: 18:56:27 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/ALU_K.sv 
 # -- Compiling module ALU_K
 # 
 # Top level modules:
 # 	ALU_K
-# End time: 14:21:05 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:27 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT11.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:05 on Mar 01,2015
+# Start time: 18:56:27 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT11.sv 
 # -- Compiling module SEXT11
 # 
 # Top level modules:
 # 	SEXT11
-# End time: 14:21:05 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:27 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT9.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:05 on Mar 01,2015
+# Start time: 18:56:27 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT9.sv 
 # -- Compiling module SEXT9
 # 
 # Top level modules:
 # 	SEXT9
-# End time: 14:21:05 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:27 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT6.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:05 on Mar 01,2015
+# Start time: 18:56:27 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT6.sv 
 # -- Compiling module SEXT6
 # 
 # Top level modules:
 # 	SEXT6
-# End time: 14:21:05 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:27 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT5.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:05 on Mar 01,2015
+# Start time: 18:56:27 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT5.sv 
 # -- Compiling module SEXT5
 # 
 # Top level modules:
 # 	SEXT5
-# End time: 14:21:05 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:27 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_3.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:05 on Mar 01,2015
+# Start time: 18:56:27 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_3.sv 
 # -- Compiling module reg_3
 # 
 # Top level modules:
 # 	reg_3
-# End time: 14:21:05 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:27 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_1.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:05 on Mar 01,2015
+# Start time: 18:56:28 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_1.sv 
 # -- Compiling module reg_1
 # 
 # Top level modules:
 # 	reg_1
-# End time: 14:21:05 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:28 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/nzp_logic.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:06 on Mar 01,2015
+# Start time: 18:56:28 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/nzp_logic.sv 
 # -- Compiling module nzp_logic
 # 
 # Top level modules:
 # 	nzp_logic
-# End time: 14:21:06 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:28 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/tri_buffer_16.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:06 on Mar 01,2015
+# Start time: 18:56:28 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/tri_buffer_16.sv 
 # -- Compiling module tri_buffer_16
 # 
 # Top level modules:
 # 	tri_buffer_16
-# End time: 14:21:06 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:28 on Mar 01,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3_2.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:56:28 on Mar 01,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3_2.sv 
+# -- Compiling package SLC3_2
+# 
+# Top level modules:
+# 	--none--
+# End time: 18:56:28 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_16.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:06 on Mar 01,2015
+# Start time: 18:56:28 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_16.sv 
 # -- Compiling module reg_16
 # 
 # Top level modules:
 # 	reg_16
-# End time: 14:21:06 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:28 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:06 on Mar 01,2015
+# Start time: 18:56:28 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv 
 # -- Compiling module mux_4x1
 # 
 # Top level modules:
 # 	mux_4x1
-# End time: 14:21:06 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:28 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_2x1.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:06 on Mar 01,2015
+# Start time: 18:56:28 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_2x1.sv 
 # -- Compiling module mux_2x1
 # 
 # Top level modules:
 # 	mux_2x1
-# End time: 14:21:06 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:28 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/Mem2IO.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:06 on Mar 01,2015
+# Start time: 18:56:28 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/Mem2IO.sv 
 # -- Compiling module Mem2IO
 # 
 # Top level modules:
 # 	Mem2IO
-# End time: 14:21:06 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:28 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/ISDU.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:07 on Mar 01,2015
+# Start time: 18:56:28 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/ISDU.sv 
 # -- Compiling module ISDU
 # 
 # Top level modules:
 # 	ISDU
-# End time: 14:21:07 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:28 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/HexDriver.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:07 on Mar 01,2015
+# Start time: 18:56:28 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/HexDriver.sv 
 # -- Compiling module HexDriver
 # 
 # Top level modules:
 # 	HexDriver
-# End time: 14:21:07 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:28 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/carry_select_adder_16.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:07 on Mar 01,2015
+# Start time: 18:56:28 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/carry_select_adder_16.sv 
 # -- Compiling module carry_select_adder_16
 # 
 # Top level modules:
 # 	carry_select_adder_16
-# End time: 14:21:07 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:28 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:07 on Mar 01,2015
+# Start time: 18:56:28 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 14:21:07 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:28 on Mar 01,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 18:56:28 on Mar 01,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv 
+# -- Compiling package SLC3_2
+# -- Compiling package test_memory_sv_unit
+# -- Importing package SLC3_2
+# -- Compiling module test_memory
+# 
+# Top level modules:
+# 	test_memory
+# End time: 18:56:29 on Mar 01,2015, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:07 on Mar 01,2015
+# Start time: 18:56:29 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv 
 # -- Compiling module processor
 # 
 # Top level modules:
 # 	processor
-# End time: 14:21:07 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:29 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:07 on Mar 01,2015
+# Start time: 18:56:29 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv 
 # -- Compiling module SLC3
 # 
 # Top level modules:
 # 	SLC3
-# End time: 14:21:07 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:29 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/testbench.sv}
 # Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
-# Start time: 14:21:07 on Mar 01,2015
+# Start time: 18:56:29 on Mar 01,2015
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6" C:/Users/Sunny/Documents/GitHub/ECE385Lab6/testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 14:21:07 on Mar 01,2015, Elapsed time: 0:00:00
+# End time: 18:56:29 on Mar 01,2015, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
 # vsim -gui "+altera" -l msim_transcript -do "ECE385Lab6_run_msim_rtl_verilog.do" 
-# Start time: 14:21:07 on Mar 01,2015
+# Start time: 18:56:29 on Mar 01,2015
 # Loading sv_std.std
 # Loading work.testbench
 # Loading work.SLC3
@@ -237,6 +260,9 @@
 # Loading work.SEXT6
 # Loading work.SEXT5
 # Loading work.Mem2IO
+# Loading work.SLC3_2
+# Loading work.test_memory_sv_unit
+# Loading work.test_memory
 # Loading work.HexDriver
 # ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv(2).
 # 
@@ -289,11 +315,6 @@
 # 
 # ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
 # 
-# A time value could not be extracted from the current line
-# A time value could not be extracted from the current line
-# A time value could not be extracted from the current line
-add wave -position insertpoint  \
-sim:/testbench/LC3/CPU/MAR/R_out
 restart
 # Loading sv_std.std
 # Loading work.testbench
@@ -315,6 +336,9 @@ restart
 # Loading work.SEXT6
 # Loading work.SEXT5
 # Loading work.Mem2IO
+# Loading work.SLC3_2
+# Loading work.test_memory_sv_unit
+# Loading work.test_memory
 # Loading work.HexDriver
 # ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv(2).
 # 
@@ -352,7 +376,7 @@ restart
 # ** Warning: (vsim-3839) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv(17): Variable '/testbench/LC3/WTF_IS_A', driven via a port connection, is multiply driven. See C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv(19).
 # 
 #         Region: /testbench/LC3
-run 1000ns
+run 7000ns
 # ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
 # 
 # ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
@@ -361,282 +385,5 @@ run 1000ns
 # 
 # ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
 # 
-run 2000ns
-add wave -position insertpoint  \
-sim:/testbench/LC3/CPU/control/State
-restart
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.SLC3
-# Loading work.processor
-# Loading work.ISDU
-# Loading work.reg_16
-# Loading work.mux_4x1
-# Loading work.tri_buffer_16
-# Loading work.carry_select_adder_16
-# Loading work.mux_2x1
-# Loading work.nzp_logic
-# Loading work.reg_3
-# Loading work.reg_1
-# Loading work.regfile
-# Loading work.ALU_K
-# Loading work.SEXT11
-# Loading work.SEXT9
-# Loading work.SEXT6
-# Loading work.SEXT5
-# Loading work.Mem2IO
-# Loading work.HexDriver
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv(2).
-# 
-#         Region: /testbench/LC3/CPU/REGFILE
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv(2).
-# 
-#         Region: /testbench/LC3/CPU/REGFILE
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In0'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In2'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In3'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In0'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In2'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In3'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(114): [PCDPC] - Port size (16) does not match connection size (1) for port 'In0'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/ADDR2MUX_mux
-# ** Warning: (vsim-3839) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv(17): Variable '/testbench/LC3/WTF_IS_A', driven via a port connection, is multiply driven. See C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv(19).
-# 
-#         Region: /testbench/LC3
-run 3000ns
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-add wave -position insertpoint  \
-sim:/testbench/LC3/CPU/IR/R_out
-restart
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.SLC3
-# Loading work.processor
-# Loading work.ISDU
-# Loading work.reg_16
-# Loading work.mux_4x1
-# Loading work.tri_buffer_16
-# Loading work.carry_select_adder_16
-# Loading work.mux_2x1
-# Loading work.nzp_logic
-# Loading work.reg_3
-# Loading work.reg_1
-# Loading work.regfile
-# Loading work.ALU_K
-# Loading work.SEXT11
-# Loading work.SEXT9
-# Loading work.SEXT6
-# Loading work.SEXT5
-# Loading work.Mem2IO
-# Loading work.HexDriver
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv(2).
-# 
-#         Region: /testbench/LC3/CPU/REGFILE
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv(2).
-# 
-#         Region: /testbench/LC3/CPU/REGFILE
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In0'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In2'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In3'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In0'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In2'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In3'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(114): [PCDPC] - Port size (16) does not match connection size (1) for port 'In0'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/ADDR2MUX_mux
-# ** Warning: (vsim-3839) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv(17): Variable '/testbench/LC3/WTF_IS_A', driven via a port connection, is multiply driven. See C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv(19).
-# 
-#         Region: /testbench/LC3
-run 3000ns
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-add wave -position insertpoint  \
-sim:/testbench/LC3/CPU/LD_IR
-restart
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.SLC3
-# Loading work.processor
-# Loading work.ISDU
-# Loading work.reg_16
-# Loading work.mux_4x1
-# Loading work.tri_buffer_16
-# Loading work.carry_select_adder_16
-# Loading work.mux_2x1
-# Loading work.nzp_logic
-# Loading work.reg_3
-# Loading work.reg_1
-# Loading work.regfile
-# Loading work.ALU_K
-# Loading work.SEXT11
-# Loading work.SEXT9
-# Loading work.SEXT6
-# Loading work.SEXT5
-# Loading work.Mem2IO
-# Loading work.HexDriver
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv(2).
-# 
-#         Region: /testbench/LC3/CPU/REGFILE
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv(2).
-# 
-#         Region: /testbench/LC3/CPU/REGFILE
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In0'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In2'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In3'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In0'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In2'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In3'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(114): [PCDPC] - Port size (16) does not match connection size (1) for port 'In0'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/ADDR2MUX_mux
-# ** Warning: (vsim-3839) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv(17): Variable '/testbench/LC3/WTF_IS_A', driven via a port connection, is multiply driven. See C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv(19).
-# 
-#         Region: /testbench/LC3
-run 3000ns
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-add wave -position insertpoint  \
-sim:/testbench/LC3/CPU/MDR/R_out
-restart
-# Loading sv_std.std
-# Loading work.testbench
-# Loading work.SLC3
-# Loading work.processor
-# Loading work.ISDU
-# Loading work.reg_16
-# Loading work.mux_4x1
-# Loading work.tri_buffer_16
-# Loading work.carry_select_adder_16
-# Loading work.mux_2x1
-# Loading work.nzp_logic
-# Loading work.reg_3
-# Loading work.reg_1
-# Loading work.regfile
-# Loading work.ALU_K
-# Loading work.SEXT11
-# Loading work.SEXT9
-# Loading work.SEXT6
-# Loading work.SEXT5
-# Loading work.Mem2IO
-# Loading work.HexDriver
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv(2).
-# 
-#         Region: /testbench/LC3/CPU/REGFILE
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(101): [PCDPC] - Port size (3) does not match connection size (16) for port 'DR'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv(2).
-# 
-#         Region: /testbench/LC3/CPU/REGFILE
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In0'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In2'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(102): [PCDPC] - Port size (16) does not match connection size (3) for port 'In3'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/SR1MUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In0'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In1'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In2'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(103): [PCDPC] - Port size (16) does not match connection size (3) for port 'In3'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/DRMUX_mux
-# ** Warning: (vsim-3015) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv(114): [PCDPC] - Port size (16) does not match connection size (1) for port 'In0'. The port definition is at: C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(1).
-# 
-#         Region: /testbench/LC3/CPU/ADDR2MUX_mux
-# ** Warning: (vsim-3839) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv(17): Variable '/testbench/LC3/WTF_IS_A', driven via a port connection, is multiply driven. See C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv(19).
-# 
-#         Region: /testbench/LC3
-run 3000ns
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-# ** Warning: (vsim-8315) C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv(5): No condition is true in the unique/priority if/case statement.
-# 
-# End time: 14:46:23 on Mar 01,2015, Elapsed time: 0:25:16
-# Errors: 0, Warnings: 96
+# End time: 18:59:54 on Mar 01,2015, Elapsed time: 0:03:25
+# Errors: 0, Warnings: 32
