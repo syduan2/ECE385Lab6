@@ -41,7 +41,6 @@ module processor (input Clk, Reset, Run, Continue,
 	   	Mem_WE; //Write Enable
 			
 	wire[15:0] IR_out, 
-				  Bus,
 				  PC_out,
 				  PC_out_1, 
 				  PC_in,

@@ -178,129 +178,129 @@ module ISDU (input Clk,
 			Halted: ;
 			S_18 : 
 				begin 
-					GatePC = 1'b1;
-					LD_MAR = 1'b1;
-					PCMUX = 2'b00; //00 is +1
-					LD_PC = 1'b1;
+					GatePC <= 1'b1;
+					LD_MAR <= 1'b1;
+					PCMUX <= 2'b00; //00 is +1
+					LD_PC <= 1'b1;
 				end
 			S_33_1 : 
-				Mem_OE = 1'b0;
+				Mem_OE <= 1'b0;
 			S_33_2 : 
 				begin 
-					Mem_OE = 1'b0;
-					LD_MDR = 1'b1;
+					Mem_OE <= 1'b0;
+					LD_MDR <= 1'b1;
             end
             S_35 : 
                 begin 
-					GateMDR = 1'b1;
-					LD_IR = 1'b1;
+					GateMDR <= 1'b1;
+					LD_IR <= 1'b1;
                 end
             PauseIR1: 
-					LD_LED=1'b1;
+					LD_LED<=1'b1;
             PauseIR2: 
-					LD_LED=1'b1;
+					LD_LED<=1'b1;
             S_32 : 
-                LD_BEN = 1'b1;
+                LD_BEN <= 1'b1;
             S_01 : //ADD
                 begin 
-					SR2MUX = ~IR_5;
-					ALUK = 2'b00;
-					GateALU = 1'b1;
-					LD_REG = 1'b1;
-					LD_CC=1'b1;
+					SR2MUX <= ~IR_5;
+					ALUK <= 2'b00;
+					GateALU <= 1'b1;
+					LD_REG <= 1'b1;
+					LD_CC<=1'b1;
                 end
 				S_05: //AND
 					begin
-					SR2MUX = ~IR_5;
-					ALUK=2'b01;
-					GateALU=1'b1;
-					LD_REG=1'b1;
-					LD_CC=1'b1;
+					SR2MUX <= ~IR_5;
+					ALUK<=2'b01;
+					GateALU<=1'b1;
+					LD_REG<=1'b1;
+					LD_CC<=1'b1;
 					end
 				S_09: //NOT
 					begin
-					SR2MUX = IR_5;
-					ALUK=2'b10;
-					GateALU=1'b1;
-					LD_REG=1'b1;
-					LD_CC=1'b1;
+					SR2MUX <= IR_5;
+					ALUK<=2'b10;
+					GateALU<=1'b1;
+					LD_REG<=1'b1;
+					LD_CC<=1'b1;
 					end
 				S_22: //BR
 					begin
-					ADDR1MUX=1'b1;
-					ADDR2MUX=2'b01;
-					PCMUX=2'b01;
-					LD_PC=1'b1;
+					ADDR1MUX<=1'b1;
+					ADDR2MUX<=2'b01;
+					PCMUX<=2'b01;
+					LD_PC<=1'b1;
 					end
 				S_12: //JMP
 					begin
-					SR1MUX=2'b01;
-					ALUK=2'b11;
-					GateALU=1'b1;
-					PCMUX=2'b10;
-					LD_PC=1'b1;
+					SR1MUX<=2'b01;
+					ALUK<=2'b11;
+					GateALU<=1'b1;
+					PCMUX<=2'b10;
+					LD_PC<=1'b1;
 					end
 				S_04_1: //JSR
 					begin
-					 DRMUX=2'b10;
-					 LD_REG=1'b1;
-					 GatePC=1'b1;					
+					 DRMUX<=2'b10;
+					 LD_REG<=1'b1;
+					 GatePC<=1'b1;					
 					end
 				S_04_2:
 					begin
-						LD_PC=1'b1;
-						ADDR2MUX=2'b00;
-						ADDR1MUX=1'b1;
-						PCMUX=2'b01;
+						LD_PC<=1'b1;
+						ADDR2MUX<=2'b00;
+						ADDR1MUX<=1'b1;
+						PCMUX<=2'b01;
 					end
 				S_06: //LDR
 					begin
-						ADDR1MUX=1'b0;
-						ADDR2MUX=2'b10;
-						SR1MUX=2'b01;
-						MARMUX=1'b1;
-						GateMARMUX=1'b1;
-						LD_MAR=1'b1;
+						ADDR1MUX<=1'b0;
+						ADDR2MUX<=2'b10;
+						SR1MUX<=2'b01;
+						MARMUX<=1'b1;
+						GateMARMUX<=1'b1;
+						LD_MAR<=1'b1;
 					end
 				S_25_1 : 
-					Mem_OE = 1'b0;
+					Mem_OE <= 1'b0;
 				S_25_2 : 
 					begin 
-						Mem_OE = 1'b0;
-						LD_MDR = 1'b1;
+						Mem_OE <= 1'b0;
+						LD_MDR <= 1'b1;
 					end
 				S_27 :
 					begin
-						DRMUX=2'b00;
-						LD_REG=1'b1;
-						GateMDR=1'b1;
-						LD_CC=1'b1;
+						DRMUX<=2'b00;
+						LD_REG<=1'b1;
+						GateMDR<=1'b1;
+						LD_CC<=1'b1;
 					end
-				S_07 :
+				S_07 : //STR
 					begin
-						ADDR1MUX=1'b0;
-						ADDR2MUX=2'b10;
-						SR1MUX=2'b01;
-						MARMUX=1'b1;
-						GateMARMUX=1'b1;
-						LD_MAR=1'b1;
+						ADDR1MUX<=1'b0;
+						ADDR2MUX<=2'b10;
+						SR1MUX<=2'b01;
+						MARMUX<=1'b1;
+						GateMARMUX<=1'b1;
+						LD_MAR<=1'b1;
 					end
 				S_23 :
 					begin
-						SR1MUX=2'b00;
-						ALUK=2'b11;
-						GateALU=1'b1;
-						LD_MDR=1'b1;
+						SR1MUX<=2'b00;
+						ALUK<=2'b11;
+						GateALU<=1'b1;
+						LD_MDR<=1'b1;
 					end
 				S_16_1 : 
 					begin
-						Mem_WE=1'b0;
-						GateMDR=1'b1;
+						Mem_WE<=1'b0;
+						GateMDR<=1'b1;
 					end
 				S_16_2 :
 					begin
-						Mem_WE=1'b0;
-						GateMDR=1'b1;
+						Mem_WE<=1'b0;
+						GateMDR<=1'b1;
 					end
             default : ;
            endcase
