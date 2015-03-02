@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/Sunny/Documents/GitHub/ECE385Lab6/simulation/modelsim
 vALU_K
 Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-Z2 !s110 1425257787
+Z2 !s110 1425280233
 !i10b 1
 !s100 U8ODUZR4]Z8o`kYCL:e[W0
 Il<<kmdaC2U:I5dI08;b<X3
@@ -26,7 +26,7 @@ Z4 OV;L;10.3c;59
 r1
 !s85 0
 31
-!s108 1425257787.508000
+!s108 1425280233.600000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/ALU_K.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/ALU_K.sv|
 !i113 1
@@ -35,7 +35,7 @@ Z6 !s92 -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6
 n@a@l@u_@k
 vcarry_select_adder_16
 R1
-Z7 !s110 1425257788
+Z7 !s110 1425280234
 !i10b 1
 !s100 91Nd2n:P3?Sm`[B=E5:2[0
 I:[XG0KOj]:MHVil]zkRXU3
@@ -51,7 +51,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257788.868000
+!s108 1425280234.525000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/carry_select_adder_16.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/carry_select_adder_16.sv|
 !i113 1
@@ -75,7 +75,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257788.780000
+!s108 1425280234.469000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/HexDriver.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/HexDriver.sv|
 !i113 1
@@ -86,13 +86,13 @@ vISDU
 R1
 R7
 !i10b 1
-!s100 64a>4k0Lh:@3n2`S55Z3O1
-Ihge22c``h:MlzGn9SbE8H1
+!s100 eZzXkD:3NJK?z]ALYnXQ?0
+I]EfbW3D``N@R]6c_aUW`e0
 R3
 !s105 ISDU_sv_unit
 S1
 R0
-w1425251761
+w1425280018
 8C:/Users/Sunny/Documents/GitHub/ECE385Lab6/ISDU.sv
 FC:/Users/Sunny/Documents/GitHub/ECE385Lab6/ISDU.sv
 Z8 L0 17
@@ -100,7 +100,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257788.724000
+!s108 1425280234.387000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/ISDU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/ISDU.sv|
 !i113 1
@@ -125,7 +125,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257788.671000
+!s108 1425280234.337000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/Mem2IO.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/Mem2IO.sv|
 !i113 1
@@ -150,7 +150,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257788.611000
+!s108 1425280234.288000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_2x1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_2x1.sv|
 !i113 1
@@ -174,7 +174,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257788.562000
+!s108 1425280234.237000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv|
 !i113 1
@@ -198,7 +198,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257788.332000
+!s108 1425280234.024000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/nzp_logic.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/nzp_logic.sv|
 !i113 1
@@ -206,15 +206,15 @@ R5
 R6
 vprocessor
 R1
-Z9 !s110 1425257789
+R7
 !i10b 1
-!s100 >mWSNDj0Gd7SBIzGQSQAk1
-I5A98PXDfgiVGnH>H1FZlD0
+!s100 d@9aGRlNeInD?PVO3mQC60
+IV=acgeM8^;A2:K8Fo^<eV3
 R3
 !s105 processor_sv_unit
 S1
 R0
-w1425240563
+w1425278823
 8C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv
 FC:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv
 L0 1
@@ -222,7 +222,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257789.049000
+!s108 1425280234.709000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv|
 !i113 1
@@ -230,7 +230,7 @@ R5
 R6
 vreg_1
 R1
-R7
+R2
 !i10b 1
 !s100 VDUOiN54ZOk3z^?l?W9ca2
 IEiVn=PYm9e0fig?FaAzRX1
@@ -246,7 +246,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257788.283000
+!s108 1425280233.976000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_1.sv|
 !i113 1
@@ -270,7 +270,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257788.511000
+!s108 1425280234.188000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_16.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_16.sv|
 !i113 1
@@ -294,7 +294,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257787.791000
+!s108 1425280233.900000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_3.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_3.sv|
 !i113 1
@@ -318,7 +318,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257788.921000
+!s108 1425280234.577000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv|
 !i113 1
@@ -342,7 +342,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257787.561000
+!s108 1425280233.700000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT11.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT11.sv|
 !i113 1
@@ -367,7 +367,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257787.738000
+!s108 1425280233.851000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT5.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT5.sv|
 !i113 1
@@ -392,7 +392,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257787.688000
+!s108 1425280233.800000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT6.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT6.sv|
 !i113 1
@@ -417,7 +417,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257787.612000
+!s108 1425280233.749000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT9.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SEXT9.sv|
 !i113 1
@@ -426,7 +426,7 @@ R6
 n@s@e@x@t9
 vSLC3
 R1
-R9
+R7
 !i10b 1
 !s100 aJAARzz:DD]<2eg39WG^92
 IPJ23aR>Vg0acnF<GgTQif0
@@ -442,7 +442,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257789.113000
+!s108 1425280234.771000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv|
 !i113 1
@@ -458,25 +458,25 @@ ITV[9RUP[3EPP3aVOn;Jga1
 VTV[9RUP[3EPP3aVOn;Jga1
 S1
 R0
-Z10 w1425257650
-Z11 FC:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3_2.sv
-Z12 8C:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv
-Z13 FC:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv
+Z9 w1425257650
+Z10 FC:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3_2.sv
+Z11 8C:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv
+Z12 FC:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv
 L0 23
 R4
 r1
 !s85 0
 31
-Z14 !s108 1425257788.975000
-Z15 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3_2.sv|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv|
-Z16 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv|
+Z13 !s108 1425280234.633000
+Z14 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3_2.sv|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv|
+Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv|
 !i113 1
 R5
 R6
 n@s@l@c3_2
 vtest_memory
 R1
-Z17 DXx4 work 6 SLC3_2 0 22 TV[9RUP[3EPP3aVOn;Jga1
+Z16 DXx4 work 6 SLC3_2 0 22 TV[9RUP[3EPP3aVOn;Jga1
 DXx4 work 19 test_memory_sv_unit 0 22 eD[YZiQOki59Pz5b3zRaE0
 R3
 r1
@@ -488,20 +488,20 @@ IOkS8P>RlK8JN?2NZ2BPFC3
 !s105 test_memory_sv_unit
 S1
 R0
-R10
+R9
+R11
 R12
-R13
 L0 28
 R4
+R13
 R14
 R15
-R16
 !i113 1
 R5
 R6
 Xtest_memory_sv_unit
 R1
-R17
+R16
 VeD[YZiQOki59Pz5b3zRaE0
 r1
 !s85 0
@@ -512,29 +512,29 @@ IeD[YZiQOki59Pz5b3zRaE0
 !i103 1
 S1
 R0
-R10
-R12
-R13
+R9
 R11
+R12
+R10
 L0 26
 R4
+R13
 R14
 R15
-R16
 !i113 1
 R5
 R6
 vtestbench
 R1
-R9
+R7
 !i10b 1
-!s100 Vjm6TCg63I=5@^NE`?OQ@0
-IBkDXU[<beIzdRCn5:nzG[0
+!s100 bOk[`O]Oo`9M?Z>[cIJii0
+I7nLELDcf9F?C7WMe=GREe2
 R3
 !s105 testbench_sv_unit
 S1
 R0
-w1425251303
+w1425277489
 8C:/Users/Sunny/Documents/GitHub/ECE385Lab6/testbench.sv
 FC:/Users/Sunny/Documents/GitHub/ECE385Lab6/testbench.sv
 L0 1
@@ -542,7 +542,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257789.173000
+!s108 1425280234.847000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/testbench.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/testbench.sv|
 !i113 1
@@ -566,7 +566,7 @@ R4
 r1
 !s85 0
 31
-!s108 1425257788.402000
+!s108 1425280234.089000
 !s107 C:/Users/Sunny/Documents/GitHub/ECE385Lab6/tri_buffer_16.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6|C:/Users/Sunny/Documents/GitHub/ECE385Lab6/tri_buffer_16.sv|
 !i113 1

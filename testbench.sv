@@ -43,7 +43,11 @@ S=16'h000B;
 
 #2 Run = 0;
 #2 Run = 1;
-#50 Continue=0;
+#60 Continue=0;
+#2 Continue=1;
+#60 Continue=0;
+#2 Continue=1;
+#60 Continue=0;
 #2 Continue=1;
 #200 S=16'h000B;
 		Reset=0;

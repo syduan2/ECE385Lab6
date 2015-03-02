@@ -203,7 +203,7 @@ module ISDU (input Clk,
                 LD_BEN = 1'b1;
             S_01 : //ADD
                 begin 
-					SR2MUX = IR_5;
+					SR2MUX = ~IR_5;
 					ALUK = 2'b00;
 					GateALU = 1'b1;
 					LD_REG = 1'b1;
@@ -211,7 +211,7 @@ module ISDU (input Clk,
                 end
 				S_05: //AND
 					begin
-					SR2MUX = IR_5;
+					SR2MUX = ~IR_5;
 					ALUK=2'b01;
 					GateALU=1'b1;
 					LD_REG=1'b1;
@@ -252,7 +252,6 @@ module ISDU (input Clk,
 						ADDR2MUX=2'b00;
 						ADDR1MUX=1'b1;
 						PCMUX=2'b01;
-						LD_PC=1'b1;
 					end
 				S_06: //LDR
 					begin

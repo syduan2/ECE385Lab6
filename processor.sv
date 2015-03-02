@@ -111,7 +111,7 @@ module processor (input Clk, Reset, Run, Continue,
 	//Addition Adder + ADDR1MUX/ADDR2MUX
 	
 	mux_2x1 ADDR1MUX_mux(.In0(SR1_Out), .In1(PC_out), .select(ADDR1MUX), .Out(ADD_in1)); // 0 is SR1, 1 is PC
-	mux_4x1 ADDR2MUX_mux(.In0(SEXT_11_out), .In1(SEXT9_out), .In2(SEXT6_out), .In3(16'b0), .select(ADDR2MUX), .Out(ADD_in2));
+	mux_4x1 ADDR2MUX_mux(.In0(SEXT11_out), .In1(SEXT9_out), .In2(SEXT6_out), .In3(16'b0), .select(ADDR2MUX), .Out(ADD_in2));
 	
 	assign add_adder = ADD_in1 + ADD_in2;
 	
