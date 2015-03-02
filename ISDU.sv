@@ -202,7 +202,8 @@ module ISDU (input Clk,
             S_32 : 
                 LD_BEN <= 1'b1;
             S_01 : //ADD
-                begin 
+                begin
+					SR1MUX <= 2'b01; //added
 					SR2MUX <= ~IR_5;
 					ALUK <= 2'b00;
 					GateALU <= 1'b1;
@@ -211,6 +212,7 @@ module ISDU (input Clk,
                 end
 				S_05: //AND
 					begin
+					SR1MUX <= 2'b01;
 					SR2MUX <= ~IR_5;
 					ALUK<=2'b01;
 					GateALU<=1'b1;
@@ -219,6 +221,7 @@ module ISDU (input Clk,
 					end
 				S_09: //NOT
 					begin
+					SR1MUX <= 2'b01;
 					SR2MUX <= IR_5;
 					ALUK<=2'b10;
 					GateALU<=1'b1;
