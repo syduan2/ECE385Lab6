@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ECE385Lab6
-Mon Mar 02 12:03:36 2015
+Tue Mar 03 16:07:36 2015
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -16,22 +16,19 @@ Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
   8. State Machine - |SLC3|processor:CPU|ISDU:control|State
   9. Registers Removed During Synthesis
  10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: test_memory:MEMTEST
- 14. Port Connectivity Checks: "test_memory:MEMTEST"
- 15. Port Connectivity Checks: "Mem2IO:MEMIO"
- 16. Port Connectivity Checks: "processor:CPU|mux_4x1:ADDR2MUX_mux"
- 17. Port Connectivity Checks: "processor:CPU|mux_4x1:DRMUX_mux"
- 18. Port Connectivity Checks: "processor:CPU|mux_4x1:SR1MUX_mux"
- 19. Port Connectivity Checks: "processor:CPU|mux_2x1:MARMUX_mux"
- 20. Port Connectivity Checks: "processor:CPU|carry_select_adder_16:PC_adder"
- 21. Port Connectivity Checks: "processor:CPU|mux_4x1:PC_mux"
- 22. Port Connectivity Checks: "processor:CPU"
- 23. Post-Synthesis Netlist Statistics for Top Partition
- 24. Elapsed Time Per Partition
- 25. Analysis & Synthesis Messages
- 26. Analysis & Synthesis Suppressed Messages
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Port Connectivity Checks: "Mem2IO:MEMIO"
+ 13. Port Connectivity Checks: "processor:CPU|mux_4x1:ADDR2MUX_mux"
+ 14. Port Connectivity Checks: "processor:CPU|mux_4x1:DRMUX_mux"
+ 15. Port Connectivity Checks: "processor:CPU|mux_4x1:SR1MUX_mux"
+ 16. Port Connectivity Checks: "processor:CPU|mux_2x1:MARMUX_mux"
+ 17. Port Connectivity Checks: "processor:CPU|carry_select_adder_16:PC_adder"
+ 18. Port Connectivity Checks: "processor:CPU|mux_4x1:PC_mux"
+ 19. Port Connectivity Checks: "processor:CPU"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+ 23. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -58,15 +55,15 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Mar 02 12:03:36 2015      ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 03 16:07:36 2015      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; ECE385Lab6                                 ;
 ; Top-level Entity Name              ; SLC3                                       ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 7,815                                      ;
-;     Total combinational functions  ; 4,525                                      ;
-;     Dedicated logic registers      ; 4,332                                      ;
-; Total registers                    ; 4332                                       ;
+; Total logic elements               ; 718                                        ;
+;     Total combinational functions  ; 547                                        ;
+;     Dedicated logic registers      ; 237                                        ;
+; Total registers                    ; 237                                        ;
 ; Total pins                         ; 101                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -188,8 +185,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; reg_1.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_1.sv                 ;         ;
 ; nzp_logic.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/nzp_logic.sv             ;         ;
 ; tri_buffer_16.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/tri_buffer_16.sv         ;         ;
-; test_memory.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv           ;         ;
-; SLC3_2.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3_2.sv                ;         ;
 ; SLC3.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv                  ;         ;
 ; reg_16.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_16.sv                ;         ;
 ; processor.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv             ;         ;
@@ -207,20 +202,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 7,815     ;
+; Estimated Total logic elements              ; 718       ;
 ;                                             ;           ;
-; Total combinational functions               ; 4525      ;
+; Total combinational functions               ; 547       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 3130      ;
-;     -- 3 input functions                    ; 375       ;
-;     -- <=2 input functions                  ; 1020      ;
+;     -- 4 input functions                    ; 386       ;
+;     -- 3 input functions                    ; 110       ;
+;     -- <=2 input functions                  ; 51        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 4480      ;
+;     -- normal mode                          ; 502       ;
 ;     -- arithmetic mode                      ; 45        ;
 ;                                             ;           ;
-; Total registers                             ; 4332      ;
-;     -- Dedicated logic registers            ; 4332      ;
+; Total registers                             ; 237       ;
+;     -- Dedicated logic registers            ; 237       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 101       ;
@@ -228,9 +223,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; Clk~input ;
-; Maximum fan-out                             ; 4332      ;
-; Total fan-out                               ; 32022     ;
-; Average fan-out                             ; 3.53      ;
+; Maximum fan-out                             ; 237       ;
+; Total fan-out                               ; 2909      ;
+; Average fan-out                             ; 2.90      ;
 +---------------------------------------------+-----------+
 
 
@@ -239,28 +234,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
-; |SLC3                                  ; 4525 (0)          ; 4332 (0)     ; 0           ; 0            ; 0       ; 0         ; 101  ; 0            ; |SLC3                                              ; work         ;
+; |SLC3                                  ; 547 (0)           ; 237 (0)      ; 0           ; 0            ; 0       ; 0         ; 101  ; 0            ; |SLC3                                              ; work         ;
 ;    |HexDriver:out0|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|HexDriver:out0                               ; work         ;
 ;    |HexDriver:out1|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|HexDriver:out1                               ; work         ;
 ;    |HexDriver:out2|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|HexDriver:out2                               ; work         ;
 ;    |HexDriver:out3|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|HexDriver:out3                               ; work         ;
-;    |Mem2IO:MEMIO|                      ; 37 (37)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|Mem2IO:MEMIO                                 ; work         ;
-;    |processor:CPU|                     ; 478 (28)          ; 220 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU                                ; work         ;
-;       |ALU_K:ALU|                      ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|ALU_K:ALU                      ; work         ;
-;       |ISDU:control|                   ; 29 (29)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|ISDU:control                   ; work         ;
+;    |Mem2IO:MEMIO|                      ; 23 (23)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|Mem2IO:MEMIO                                 ; work         ;
+;    |processor:CPU|                     ; 496 (28)          ; 221 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU                                ; work         ;
+;       |ALU_K:ALU|                      ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|ALU_K:ALU                      ; work         ;
+;       |ISDU:control|                   ; 37 (37)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|ISDU:control                   ; work         ;
 ;       |carry_select_adder_16:PC_adder| ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|carry_select_adder_16:PC_adder ; work         ;
-;       |mux_2x1:ADDR1MUX_mux|           ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|mux_2x1:ADDR1MUX_mux           ; work         ;
-;       |mux_2x1:SR2MUX_mux|             ; 94 (94)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|mux_2x1:SR2MUX_mux             ; work         ;
+;       |mux_2x1:ADDR1MUX_mux|           ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|mux_2x1:ADDR1MUX_mux           ; work         ;
+;       |mux_2x1:SR2MUX_mux|             ; 95 (95)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|mux_2x1:SR2MUX_mux             ; work         ;
 ;       |mux_4x1:ADDR2MUX_mux|           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|mux_4x1:ADDR2MUX_mux           ; work         ;
 ;       |mux_4x1:DRMUX_mux|              ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|mux_4x1:DRMUX_mux              ; work         ;
 ;       |mux_4x1:SR1MUX_mux|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|mux_4x1:SR1MUX_mux             ; work         ;
 ;       |nzp_logic:NZP_logic|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|nzp_logic:NZP_logic            ; work         ;
 ;       |reg_16:IR|                      ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|reg_16:IR                      ; work         ;
-;       |reg_16:MAR|                     ; 20 (20)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|reg_16:MAR                     ; work         ;
+;       |reg_16:MAR|                     ; 18 (18)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|reg_16:MAR                     ; work         ;
 ;       |reg_16:MDR|                     ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|reg_16:MDR                     ; work         ;
-;       |reg_16:PC|                      ; 34 (34)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|reg_16:PC                      ; work         ;
+;       |reg_16:PC|                      ; 33 (33)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|reg_16:PC                      ; work         ;
 ;       |reg_1:BEN_reg|                  ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|reg_1:BEN_reg                  ; work         ;
-;       |reg_3:NZP_reg|                  ; 6 (6)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|reg_3:NZP_reg                  ; work         ;
+;       |reg_3:NZP_reg|                  ; 4 (4)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|reg_3:NZP_reg                  ; work         ;
 ;       |regfile:REGFILE|                ; 90 (80)           ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|regfile:REGFILE                ; work         ;
 ;          |reg_16:R0|                   ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R0      ; work         ;
 ;          |reg_16:R1|                   ; 2 (2)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R1      ; work         ;
@@ -270,45 +265,45 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |reg_16:R5|                   ; 2 (2)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R5      ; work         ;
 ;          |reg_16:R6|                   ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R6      ; work         ;
 ;          |reg_16:R7|                   ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R7      ; work         ;
-;       |tri_buffer_16:alu_gate|         ; 26 (26)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|tri_buffer_16:alu_gate         ; work         ;
-;       |tri_buffer_16:mdr_gate_PC|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|tri_buffer_16:mdr_gate_PC      ; work         ;
-;       |tri_buffer_16:pc_gate|          ; 73 (73)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|tri_buffer_16:pc_gate          ; work         ;
-;    |test_memory:MEMTEST|               ; 3982 (3982)       ; 4096 (4096)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|test_memory:MEMTEST                          ; work         ;
+;       |tri_buffer_16:alu_gate|         ; 39 (39)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|tri_buffer_16:alu_gate         ; work         ;
+;       |tri_buffer_16:mdr_gate_PC|      ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|tri_buffer_16:mdr_gate_PC      ; work         ;
+;       |tri_buffer_16:pc_gate|          ; 65 (65)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SLC3|processor:CPU|tri_buffer_16:pc_gate          ; work         ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |SLC3|processor:CPU|ISDU:control|State                                                                                                                                                                                                                                                                                                           ;
-+----------------+--------------+--------------+------------+------------+--------------+--------------+------------+------------+------------+--------------+--------------+------------+------------+------------+------------+------------+------------+------------+--------------+--------------+------------+----------------+----------------+--------------+
-; Name           ; State.S_16_2 ; State.S_16_1 ; State.S_23 ; State.S_27 ; State.S_25_2 ; State.S_25_1 ; State.S_22 ; State.S_07 ; State.S_06 ; State.S_04_2 ; State.S_04_1 ; State.S_12 ; State.S_00 ; State.S_09 ; State.S_05 ; State.S_01 ; State.S_32 ; State.S_35 ; State.S_33_2 ; State.S_33_1 ; State.S_18 ; State.PauseIR2 ; State.PauseIR1 ; State.Halted ;
-+----------------+--------------+--------------+------------+------------+--------------+--------------+------------+------------+------------+--------------+--------------+------------+------------+------------+------------+------------+------------+------------+--------------+--------------+------------+----------------+----------------+--------------+
-; State.Halted   ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 0            ;
-; State.PauseIR1 ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 1              ; 1            ;
-; State.PauseIR2 ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 1              ; 0              ; 1            ;
-; State.S_18     ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 1          ; 0              ; 0              ; 1            ;
-; State.S_33_1   ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 1            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_33_2   ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_35     ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_32     ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_01     ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_05     ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_09     ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_00     ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_12     ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_04_1   ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 1            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_04_2   ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 1            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_06     ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 1          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_07     ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 1          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_22     ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 1          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_25_1   ; 0            ; 0            ; 0          ; 0          ; 0            ; 1            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_25_2   ; 0            ; 0            ; 0          ; 0          ; 1            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_27     ; 0            ; 0            ; 0          ; 1          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_23     ; 0            ; 0            ; 1          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_16_1   ; 0            ; 1            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-; State.S_16_2   ; 1            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
-+----------------+--------------+--------------+------------+------------+--------------+--------------+------------+------------+------------+--------------+--------------+------------+------------+------------+------------+------------+------------+------------+--------------+--------------+------------+----------------+----------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |SLC3|processor:CPU|ISDU:control|State                                                                                                                                                                                                                                                                                                                          ;
++----------------+--------------+--------------+--------------+------------+------------+--------------+--------------+------------+------------+------------+--------------+--------------+------------+------------+------------+------------+------------+------------+------------+--------------+--------------+------------+----------------+----------------+--------------+
+; Name           ; State.S_16_3 ; State.S_16_2 ; State.S_16_1 ; State.S_23 ; State.S_27 ; State.S_25_2 ; State.S_25_1 ; State.S_22 ; State.S_07 ; State.S_06 ; State.S_04_2 ; State.S_04_1 ; State.S_12 ; State.S_00 ; State.S_09 ; State.S_05 ; State.S_01 ; State.S_32 ; State.S_35 ; State.S_33_2 ; State.S_33_1 ; State.S_18 ; State.PauseIR2 ; State.PauseIR1 ; State.Halted ;
++----------------+--------------+--------------+--------------+------------+------------+--------------+--------------+------------+------------+------------+--------------+--------------+------------+------------+------------+------------+------------+------------+------------+--------------+--------------+------------+----------------+----------------+--------------+
+; State.Halted   ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 0            ;
+; State.PauseIR1 ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 1              ; 1            ;
+; State.PauseIR2 ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 1              ; 0              ; 1            ;
+; State.S_18     ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 1          ; 0              ; 0              ; 1            ;
+; State.S_33_1   ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 1            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_33_2   ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_35     ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_32     ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_01     ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_05     ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_09     ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_00     ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_12     ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_04_1   ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 1            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_04_2   ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 1            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_06     ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 1          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_07     ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 1          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_22     ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 1          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_25_1   ; 0            ; 0            ; 0            ; 0          ; 0          ; 0            ; 1            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_25_2   ; 0            ; 0            ; 0            ; 0          ; 0          ; 1            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_27     ; 0            ; 0            ; 0            ; 0          ; 1          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_23     ; 0            ; 0            ; 0            ; 1          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_16_1   ; 0            ; 0            ; 1            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_16_2   ; 0            ; 1            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
+; State.S_16_3   ; 1            ; 0            ; 0            ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0            ; 0            ; 0          ; 0              ; 0              ; 1            ;
++----------------+--------------+--------------+--------------+------------+------------+--------------+--------------+------------+------------+------------+--------------+--------------+------------+------------+------------+------------+------------+------------+------------+--------------+--------------+------------+----------------+----------------+--------------+
 
 
 +------------------------------------------------------------+
@@ -331,124 +326,14 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4332  ;
+; Total registers                              ; 237   ;
 ; Number of registers using Synchronous Clear  ; 18    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4136  ;
+; Number of registers using Asynchronous Clear ; 41    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4290  ;
+; Number of registers using Clock Enable       ; 194   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Inverted Register Statistics                        ;
-+-------------------------------------------+---------+
-; Inverted Register                         ; Fan out ;
-+-------------------------------------------+---------+
-; test_memory:MEMTEST|mem_array[134][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[142][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[153][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[147][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[145][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[131][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[129][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[151][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[133][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[83][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[99][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[67][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[115][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[86][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[70][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[82][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[66][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[103][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[71][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[89][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[105][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[108][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[76][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[124][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[104][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[72][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[120][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[125][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[97][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[65][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[113][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[100][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[96][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[80][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[64][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[112][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[101][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[85][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[94][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[95][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[107][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[110][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[106][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[111][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[75][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[78][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[74][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[126][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[122][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[127][0]     ; 1       ;
-; test_memory:MEMTEST|mem_array[26][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[24][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[21][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[17][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[18][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[22][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[27][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[29][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[31][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[41][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[40][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[38][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[36][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[39][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[33][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[34][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[35][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[45][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[46][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[47][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[8][0]       ; 1       ;
-; test_memory:MEMTEST|mem_array[14][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[3][0]       ; 1       ;
-; test_memory:MEMTEST|mem_array[5][0]       ; 1       ;
-; test_memory:MEMTEST|mem_array[1][0]       ; 1       ;
-; test_memory:MEMTEST|mem_array[7][0]       ; 1       ;
-; test_memory:MEMTEST|mem_array[4][0]       ; 1       ;
-; test_memory:MEMTEST|mem_array[6][0]       ; 1       ;
-; test_memory:MEMTEST|mem_array[11][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[13][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[15][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[60][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[58][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[55][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[54][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[59][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[57][0]      ; 1       ;
-; test_memory:MEMTEST|mem_array[149][1]     ; 1       ;
-; test_memory:MEMTEST|mem_array[148][1]     ; 1       ;
-; test_memory:MEMTEST|mem_array[144][1]     ; 1       ;
-; test_memory:MEMTEST|mem_array[133][1]     ; 1       ;
-; test_memory:MEMTEST|mem_array[132][1]     ; 1       ;
-; test_memory:MEMTEST|mem_array[129][1]     ; 1       ;
-; test_memory:MEMTEST|mem_array[147][1]     ; 1       ;
-; test_memory:MEMTEST|mem_array[29][1]      ; 1       ;
-; test_memory:MEMTEST|mem_array[13][1]      ; 1       ;
-; test_memory:MEMTEST|mem_array[93][1]      ; 1       ;
-; test_memory:MEMTEST|mem_array[27][1]      ; 1       ;
-; test_memory:MEMTEST|mem_array[75][1]      ; 1       ;
-; test_memory:MEMTEST|mem_array[9][1]       ; 1       ;
-; Total number of inverted registers = 977* ;         ;
-+-------------------------------------------+---------+
-* Table truncated at 100 items. To change the number of inverted registers reported, set the "Number of Inverted Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -456,44 +341,24 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|reg_16:IR|R[3]                  ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|reg_16:MAR|R[9]                 ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R0|R[3]  ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R1|R[14] ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R2|R[12] ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R3|R[1]  ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R4|R[9]  ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R5|R[10] ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R6|R[5]  ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R7|R[5]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|reg_16:IR|R[2]                  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|reg_16:MAR|R[13]                ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R0|R[0]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R1|R[9]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R2|R[3]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R3|R[11] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R4|R[14] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R5|R[14] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R6|R[1]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|regfile:REGFILE|reg_16:R7|R[15] ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |SLC3|processor:CPU|reg_3:NZP_reg|R[0]              ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |SLC3|processor:CPU|reg_16:MDR|R[9]                 ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|reg_16:PC|R[5]                  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |SLC3|processor:CPU|reg_16:MDR|R[7]                 ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; Yes        ; |SLC3|processor:CPU|reg_16:PC|R[8]                  ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |SLC3|processor:CPU|mux_4x1:ADDR2MUX_mux|Mux6       ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |SLC3|processor:CPU|ALU_K:ALU|Mux8                  ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |SLC3|processor:CPU|regfile:REGFILE|Mux6            ;
-; 9:1                ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |SLC3|processor:CPU|mux_2x1:SR2MUX_mux|Out[4]       ;
-; 256:1              ; 16 bits   ; 2720 LEs      ; 2720 LEs             ; 0 LEs                  ; No         ; |SLC3|test_memory:MEMTEST|Mux4                      ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |SLC3|processor:CPU|ALU_K:ALU|Mux1                  ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |SLC3|processor:CPU|regfile:REGFILE|Mux9            ;
+; 9:1                ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |SLC3|processor:CPU|mux_2x1:SR2MUX_mux|Out[0]       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: test_memory:MEMTEST ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; size           ; 256   ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------+
-; Port Connectivity Checks: "test_memory:MEMTEST" ;
-+-----------+-------+----------+------------------+
-; Port      ; Type  ; Severity ; Details          ;
-+-----------+-------+----------+------------------+
-; A[19..16] ; Input ; Info     ; Stuck at GND     ;
-+-----------+-------+----------+------------------+
 
 
 +---------------------------------------------+
@@ -591,25 +456,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 101                         ;
-; cycloneiii_ff         ; 4332                        ;
-;     CLR               ; 24                          ;
+; cycloneiii_ff         ; 237                         ;
+;     CLR               ; 25                          ;
 ;     ENA               ; 178                         ;
-;     ENA CLR           ; 4112                        ;
+;     ENA CLR           ; 16                          ;
 ;     SCLR              ; 18                          ;
 ; cycloneiii_io_obuf    ; 16                          ;
-; cycloneiii_lcell_comb ; 4531                        ;
+; cycloneiii_lcell_comb ; 553                         ;
 ;     arith             ; 45                          ;
 ;         2 data inputs ; 15                          ;
 ;         3 data inputs ; 30                          ;
-;     normal            ; 4486                        ;
+;     normal            ; 508                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 983                         ;
-;         2 data inputs ; 27                          ;
-;         3 data inputs ; 345                         ;
-;         4 data inputs ; 3130                        ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 35                          ;
+;         3 data inputs ; 80                          ;
+;         4 data inputs ; 386                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 13.20                       ;
-; Average LUT depth     ; 6.61                        ;
+; Max LUT depth         ; 14.10                       ;
+; Average LUT depth     ; 9.47                        ;
 +-----------------------+-----------------------------+
 
 
@@ -618,7 +483,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:08     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -628,7 +493,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Mon Mar 02 12:03:08 2015
+    Info: Processing started: Tue Mar 03 16:07:21 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ECE385Lab6 -c ECE385Lab6
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file alu_k.sv
@@ -679,7 +544,7 @@ Info (12127): Elaborating entity "SLC3" for the top level hierarchy
 Info (12128): Elaborating entity "processor" for hierarchy "processor:CPU"
 Info (12128): Elaborating entity "ISDU" for hierarchy "processor:CPU|ISDU:control"
 Info (10264): Verilog HDL Case Statement information at ISDU.sv(73): all case item expressions in this case statement are onehot
-Info (10264): Verilog HDL Case Statement information at ISDU.sv(177): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at ISDU.sv(182): all case item expressions in this case statement are onehot
 Info (12128): Elaborating entity "reg_16" for hierarchy "processor:CPU|reg_16:IR"
 Info (12128): Elaborating entity "mux_4x1" for hierarchy "processor:CPU|mux_4x1:PC_mux"
 Info (12128): Elaborating entity "tri_buffer_16" for hierarchy "processor:CPU|tri_buffer_16:pc_gate"
@@ -695,8 +560,6 @@ Info (12128): Elaborating entity "SEXT9" for hierarchy "processor:CPU|SEXT9:sext
 Info (12128): Elaborating entity "SEXT6" for hierarchy "processor:CPU|SEXT6:sext_6"
 Info (12128): Elaborating entity "SEXT5" for hierarchy "processor:CPU|SEXT5:sext_5"
 Info (12128): Elaborating entity "Mem2IO" for hierarchy "Mem2IO:MEMIO"
-Info (12128): Elaborating entity "test_memory" for hierarchy "test_memory:MEMTEST"
-Warning (10230): Verilog HDL assignment warning at SLC3_2.sv(110): truncated value with size 32 to match size of target (5)
 Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:out0"
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
@@ -716,8 +579,6 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[13]" to the node "processor:CPU|nzp_logic:NZP_logic|Equal0" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[14]" to the node "processor:CPU|nzp_logic:NZP_logic|Equal0" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "processor:CPU|tri_buffer_16:pc_gate|Out[15]" to the node "processor:CPU|reg_16:PC|R" into an OR gate
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "A[16]" is stuck at GND
     Warning (13410): Pin "A[17]" is stuck at GND
@@ -731,16 +592,16 @@ Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/Sunny/Documents/GitHub/ECE385Lab6/output_files/ECE385Lab6.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 7948 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 851 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 20 input pins
     Info (21059): Implemented 65 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 7847 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 28 warnings
-    Info: Peak virtual memory: 658 megabytes
-    Info: Processing ended: Mon Mar 02 12:03:36 2015
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:37
+    Info (21061): Implemented 750 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 617 megabytes
+    Info: Processing ended: Tue Mar 03 16:07:36 2015
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:33
 
 
 +------------------------------------------+

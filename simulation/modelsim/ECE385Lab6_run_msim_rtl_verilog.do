@@ -14,7 +14,6 @@ vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users
 vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_1.sv}
 vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/nzp_logic.sv}
 vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/tri_buffer_16.sv}
-vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3_2.sv}
 vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/reg_16.sv}
 vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_4x1.sv}
 vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/mux_2x1.sv}
@@ -23,7 +22,6 @@ vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users
 vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/HexDriver.sv}
 vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/carry_select_adder_16.sv}
 vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/regfile.sv}
-vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/test_memory.sv}
 vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/processor.sv}
 vlog -sv -work work +incdir+C:/Users/Sunny/Documents/GitHub/ECE385Lab6 {C:/Users/Sunny/Documents/GitHub/ECE385Lab6/SLC3.sv}
 

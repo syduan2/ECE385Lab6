@@ -235,7 +235,7 @@ module test_memory ( input 			Clk,
 				mem_array[i] <= 16'h0;
 			end
 		end
-		else if (~CE && ~WE && A[15:6]==10'b0000000000)
+		else if (~CE && ~WE && A[15:8]==8'b00000000)
 		begin
             if(~UB)
 			    mem_array[A[7:0]][15:8] <= I_O[15:8];   // A(15 downto X+1): X must

@@ -37,19 +37,21 @@ initial begin: TEST_VECTORS
 Reset = 0;		// Toggle Rest
 Run = 1;
 Continue = 1;
-S=16'h0006;
+S=16'h005A;
 
 #2 Reset = 1;
 
 #2 Run = 0;
 #2 Run = 1;
-#60 Continue=0;
+#120 S=16'h0002;
+#120	Continue=0;
 #2 Continue=1;
-#60 Continue=0;
+#120 S=16'h0003;
+#42000 Continue=0;
 #2 Continue=1;
-#60 Continue=0;
+#120 Continue=0;
 #2 Continue=1;
-#60 Continue=0;
+#120 Continue=0;
 #2 Continue=1;
 #60 Continue=0;
 #2 Continue=1;
